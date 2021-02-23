@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8DE4D3B-A928-49A1-A9AF-0E6F5390C9A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsUI</RootNamespace>
+    <AssemblyName>WindowsFormsUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompanyForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyForms.Designer.cs">
+      <DependentUpon>CompanyForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAddUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerAddUpdate.Designer.cs">
+      <DependentUpon>CustomerAddUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerForms.Designer.cs">
+      <DependentUpon>CustomerForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForms.Designer.cs">
+      <DependentUpon>LoginForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductAddUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductAddUpdate.Designer.cs">
+      <DependentUpon>ProductAddUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductExplanationForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductExplanationForms.Designer.cs">
+      <DependentUpon>ProductExplanationForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductForms.Designer.cs">
+      <DependentUpon>ProductForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CompanyForms.resx">
+      <DependentUpon>CompanyForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerAddUpdate.resx">
+      <DependentUpon>CustomerAddUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerForms.resx">
+      <DependentUpon>CustomerForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForms.resx">
+      <DependentUpon>LoginForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductAddUpdate.resx">
+      <DependentUpon>ProductAddUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductExplanationForms.resx">
+      <DependentUpon>ProductExplanationForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductForms.resx">
+      <DependentUpon>ProductForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{bb6d8356-5804-48f9-9c7d-529afd1b0ef5}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseLogicLayer\DatabaseLogicLayer.csproj">
+      <Project>{1882b973-8130-4027-8783-94070a24f200}</Project>
+      <Name>DatabaseLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{a4b76557-9184-49fa-939d-e3cb27ebe5cb}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_password_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-Hot-Home-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Awicons-Vista-Artistic-2-Hot-Home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_house_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_house.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_open_box.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_stocks.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_account_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_company_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_customer_support_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_ledger_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_safe_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Task_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Bank_Building_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Phonelink_Ring_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_billing_machine_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_settings_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Add_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_new_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_update_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_48.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
