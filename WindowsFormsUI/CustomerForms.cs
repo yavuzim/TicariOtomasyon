@@ -47,6 +47,7 @@ namespace WindowsFormsUI
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            CustomerAddUpdate frm = new CustomerAddUpdate();
             frm.ShowDialog();
         }
 
