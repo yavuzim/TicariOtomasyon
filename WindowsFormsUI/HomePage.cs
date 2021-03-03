@@ -45,5 +45,11 @@ namespace WindowsFormsUI
             LoginForms frm = new LoginForms();
             frm.Show();
         }
+
+        private void btnCompany_Click(object sender, EventArgs e)
+        {
+            CompanyForms frm = new CompanyForms();
+            GetForm(frm);
+        }
     }
 }

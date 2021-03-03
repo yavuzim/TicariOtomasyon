@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Company.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="CustomerPersonnelBaseType.cs" />
     <Compile Include="Personnel.cs" />
@@ -48,7 +49,6 @@
     <Compile Include="Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemUser.cs" />
-    <Compile Include="TcKontrol.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

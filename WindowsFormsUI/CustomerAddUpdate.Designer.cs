@@ -32,6 +32,7 @@ namespace WindowsFormsUI
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.cmdCustomerCounty = new System.Windows.Forms.ComboBox();
             this.cmdCustomerCity = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCustomerAddress = new System.Windows.Forms.TextBox();
@@ -48,12 +49,11 @@ namespace WindowsFormsUI
             this.label5 = new System.Windows.Forms.Label();
             this.txtCustomerPhone1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtCustomerLastname = new System.Windows.Forms.TextBox();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.lblSonuc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
-            this.txtCustomerLastname = new System.Windows.Forms.TextBox();
-            this.cmdCustomerCounty = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,6 +128,15 @@ namespace WindowsFormsUI
             this.btnAdd.Text = "MÜŞTERİ EKLE";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // cmdCustomerCounty
+            // 
+            this.cmdCustomerCounty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmdCustomerCounty.FormattingEnabled = true;
+            this.cmdCustomerCounty.Location = new System.Drawing.Point(519, 213);
+            this.cmdCustomerCounty.Name = "cmdCustomerCounty";
+            this.cmdCustomerCounty.Size = new System.Drawing.Size(193, 26);
+            this.cmdCustomerCounty.TabIndex = 27;
             // 
             // cmdCustomerCity
             // 
@@ -278,6 +287,14 @@ namespace WindowsFormsUI
             this.label3.TabIndex = 8;
             this.label3.Text = "Telefon 1:";
             // 
+            // txtCustomerLastname
+            // 
+            this.txtCustomerLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtCustomerLastname.Location = new System.Drawing.Point(154, 119);
+            this.txtCustomerLastname.Name = "txtCustomerLastname";
+            this.txtCustomerLastname.Size = new System.Drawing.Size(193, 24);
+            this.txtCustomerLastname.TabIndex = 25;
+            // 
             // txtCustomerName
             // 
             this.txtCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -323,23 +340,6 @@ namespace WindowsFormsUI
             this.btnExit.TabIndex = 6;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // txtCustomerLastname
-            // 
-            this.txtCustomerLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCustomerLastname.Location = new System.Drawing.Point(154, 119);
-            this.txtCustomerLastname.Name = "txtCustomerLastname";
-            this.txtCustomerLastname.Size = new System.Drawing.Size(193, 24);
-            this.txtCustomerLastname.TabIndex = 25;
-            // 
-            // cmdCustomerCounty
-            // 
-            this.cmdCustomerCounty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmdCustomerCounty.FormattingEnabled = true;
-            this.cmdCustomerCounty.Location = new System.Drawing.Point(519, 213);
-            this.cmdCustomerCounty.Name = "cmdCustomerCounty";
-            this.cmdCustomerCounty.Size = new System.Drawing.Size(193, 26);
-            this.cmdCustomerCounty.TabIndex = 27;
             // 
             // CustomerAddUpdate
             // 

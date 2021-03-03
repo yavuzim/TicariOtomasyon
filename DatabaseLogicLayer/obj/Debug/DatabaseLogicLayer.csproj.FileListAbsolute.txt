@@ -25,3 +25,12 @@ C:\Users\YAVUZ İMER\Desktop\proje\DatabaseLogicLayer\obj\Debug\DatabaseLogicLay
 C:\Users\YAVUZ İMER\Desktop\proje\DatabaseLogicLayer\obj\Debug\DatabaseLogicLayer.csproj.CopyComplete
 C:\Users\YAVUZ İMER\Desktop\proje\DatabaseLogicLayer\obj\Debug\DatabaseLogicLayer.dll
 C:\Users\YAVUZ İMER\Desktop\proje\DatabaseLogicLayer\obj\Debug\DatabaseLogicLayer.pdb
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\DatabaseLogicLayer\bin\Debug\DatabaseLogicLayer.dll
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\DatabaseLogicLayer\bin\Debug\DatabaseLogicLayer.pdb
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\DatabaseLogicLayer\bin\Debug\Entities.dll
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\DatabaseLogicLayer\bin\Debug\Entities.pdb
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\DatabaseLogicLayer\obj\Debug\DatabaseLogicLayer.csprojAssemblyReference.cache
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\DatabaseLogicLayer\obj\Debug\DatabaseLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\DatabaseLogicLayer\obj\Debug\DatabaseLogicLayer.csproj.CopyComplete
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\DatabaseLogicLayer\obj\Debug\DatabaseLogicLayer.dll
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\DatabaseLogicLayer\obj\Debug\DatabaseLogicLayer.pdb

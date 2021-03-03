@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="City.cs" />
+    <Compile Include="CompanyDatabase.cs" />
     <Compile Include="CustomerDatabase.cs" />
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="ProductBrandDatabase.cs" />

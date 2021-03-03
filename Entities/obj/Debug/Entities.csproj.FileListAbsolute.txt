@@ -14,3 +14,9 @@ C:\Users\YAVUZ İMER\Desktop\proje\Entities\obj\Debug\Entities.csprojAssemblyRef
 C:\Users\YAVUZ İMER\Desktop\proje\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
 C:\Users\YAVUZ İMER\Desktop\proje\Entities\obj\Debug\Entities.dll
 C:\Users\YAVUZ İMER\Desktop\proje\Entities\obj\Debug\Entities.pdb
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\Entities\obj\Debug\Entities.dll
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\Entities\obj\Debug\Entities.pdb
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\Entities\bin\Debug\Entities.dll
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\Entities\bin\Debug\Entities.pdb

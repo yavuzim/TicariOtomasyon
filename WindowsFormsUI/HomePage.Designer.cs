@@ -479,6 +479,7 @@ namespace WindowsFormsUI
             this.btnCompany.Size = new System.Drawing.Size(88, 72);
             this.btnCompany.TabIndex = 0;
             this.btnCompany.UseVisualStyleBackColor = false;
+            this.btnCompany.Click += new System.EventHandler(this.btnCompany_Click);
             // 
             // btnProduct
             // 

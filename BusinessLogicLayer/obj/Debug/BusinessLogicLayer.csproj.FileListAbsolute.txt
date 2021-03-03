@@ -31,3 +31,14 @@ C:\Users\YAVUZ İMER\Desktop\proje\BusinessLogicLayer\obj\Debug\BusinessLogicLay
 C:\Users\YAVUZ İMER\Desktop\proje\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
 C:\Users\YAVUZ İMER\Desktop\proje\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
 C:\Users\YAVUZ İMER\Desktop\proje\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\BusinessLogicLayer\bin\Debug\DatabaseLogicLayer.dll
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\BusinessLogicLayer\bin\Debug\Entities.dll
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\BusinessLogicLayer\bin\Debug\DatabaseLogicLayer.pdb
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\BusinessLogicLayer\bin\Debug\Entities.pdb
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojAssemblyReference.cache
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
