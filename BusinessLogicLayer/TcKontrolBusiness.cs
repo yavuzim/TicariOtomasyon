@@ -17,12 +17,12 @@ namespace BusinessLogicLayer
             SqlDataReader read = null;
             using (TcKontrolDatabase tcD = new TcKontrolDatabase())
             {
-                read = tcD.TcList();
+                if (CompanyBusiness.companyTC == 1)
+                    read = tcD.TcListCompany();
+                if (CustomerBusiness.customerTC == 1)
+                    read = tcD.TcList();
                 while (read.Read())
-                {
-                    string tc = read.GetString(0);
-                    _Tclist.Add(tc);
-                }
+                    _Tclist.Add(read.GetString(0));
             }
         }
         public bool TcListKontrol(string customer) // Ekleme işleminde T.C varsa false dönecek.

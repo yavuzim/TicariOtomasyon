@@ -14,13 +14,15 @@ namespace BusinessLogicLayer
 {
     public class CustomerBusiness
     {
+        public static int customerTC = 0;
         public int CustomerAdd(string Ad, string Soyad, string Telefon, string Telefon2, string TC, string Mail, int Sehir, int Ilce, string Adres, string VergiDairesi)
         {
             int resultReturn = 0, getData = 0;
             if (string.IsNullOrEmpty(Ad) || string.IsNullOrEmpty(Soyad) || string.IsNullOrEmpty(Telefon) || string.IsNullOrEmpty(TC) || string.IsNullOrEmpty(Mail) || string.IsNullOrEmpty(Adres) || string.IsNullOrEmpty(VergiDairesi)) resultReturn = 0;
             else
             {
-                Customer customer = new Customer();
+                customerTC = 1;
+                   Customer customer = new Customer();
                 TcKontrolBusiness tcB = new TcKontrolBusiness();
                 using (CustomerDatabase cdb = new CustomerDatabase())
                 {
@@ -60,7 +62,7 @@ namespace BusinessLogicLayer
             }
             return resultReturn;
         }
-        public int CustomerUpdate(int ID, string Ad, string Soyad, string Telefon, string Telefon2, string TC,string _TC, string Mail, int Sehir, int Ilce, string Adres, string VergiDairesi)
+        public int CustomerUpdate(int ID, string Ad, string Soyad, string Telefon, string Telefon2, string TC, string _TC, string Mail, int Sehir, int Ilce, string Adres, string VergiDairesi)
         {
             int resultReturn = 0, getData = 0;
             if (string.IsNullOrEmpty(Ad) || string.IsNullOrEmpty(Soyad) || string.IsNullOrEmpty(Telefon) || string.IsNullOrEmpty(TC) || string.IsNullOrEmpty(Mail) || string.IsNullOrEmpty(Adres) || string.IsNullOrEmpty(VergiDairesi)) resultReturn = 0;

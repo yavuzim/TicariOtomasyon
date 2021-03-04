@@ -16,5 +16,12 @@ namespace DatabaseLogicLayer
             reader = cmd.ExecuteReader();
             return reader;
         }
+        public SqlDataReader TcListCompany()
+        {
+            cmd = new SqlCommand("select YetkiliTc from Firmalar", con);
+            ConnectionWizard();
+            reader = cmd.ExecuteReader();
+            return reader;
+        }
     }
 }
