@@ -144,6 +144,7 @@ namespace WindowsFormsUI
             this.btnDelete.TabIndex = 10;
             this.toolTip1.SetToolTip(this.btnDelete, "Firma Sil");
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // gridCompany
             // 
@@ -155,6 +156,7 @@ namespace WindowsFormsUI
             this.gridCompany.RowTemplate.Height = 24;
             this.gridCompany.Size = new System.Drawing.Size(1621, 809);
             this.gridCompany.TabIndex = 7;
+            this.gridCompany.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridCompany_CellClick);
             // 
             // btnUpdate
             // 
@@ -176,6 +178,7 @@ namespace WindowsFormsUI
             this.btnUpdate.TabIndex = 11;
             this.toolTip1.SetToolTip(this.btnUpdate, "Firma Güncelle");
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // tabControl1
             // 

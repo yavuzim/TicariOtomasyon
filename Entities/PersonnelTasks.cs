@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    public class Personnel : CustomerPersonnelBaseType
+    public class PersonnelTasks
     {
-        public string GorevId { get; set; }
+        public int GorevID { get; set; }
+        public string Gorev { get; set; }
     }
 }

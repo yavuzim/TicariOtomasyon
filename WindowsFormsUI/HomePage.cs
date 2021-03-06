@@ -51,5 +51,11 @@ namespace WindowsFormsUI
             CompanyForms frm = new CompanyForms();
             GetForm(frm);
         }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            PersonnelForms frm = new PersonnelForms();
+            GetForm(frm);
+        }
     }
 }

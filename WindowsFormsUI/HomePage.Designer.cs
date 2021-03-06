@@ -425,6 +425,7 @@ namespace WindowsFormsUI
             this.btnStaff.Size = new System.Drawing.Size(88, 72);
             this.btnStaff.TabIndex = 0;
             this.btnStaff.UseVisualStyleBackColor = false;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
             // btnBank
             // 

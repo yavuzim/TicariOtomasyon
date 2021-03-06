@@ -23,5 +23,12 @@ namespace DatabaseLogicLayer
             reader = cmd.ExecuteReader();
             return reader;
         }
+        public SqlDataReader TcListPersonnel()
+        {
+            cmd = new SqlCommand("select TC from Personeller", con);
+            ConnectionWizard();
+            reader = cmd.ExecuteReader();
+            return reader;
+        }
     }
 }

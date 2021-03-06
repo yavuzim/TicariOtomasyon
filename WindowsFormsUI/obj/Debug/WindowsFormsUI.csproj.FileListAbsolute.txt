@@ -250,3 +250,4 @@ C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFor
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.csproj.CopyComplete
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.exe
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.pdb
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.PersonnelForms.resources
