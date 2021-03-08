@@ -57,7 +57,7 @@ namespace WindowsFormsUI
             this.label3 = new System.Windows.Forms.Label();
             this.txtPersonnelFirstName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.gridCompany = new System.Windows.Forms.DataGridView();
+            this.gridPersonnel = new System.Windows.Forms.DataGridView();
             this.btnPersonnelExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -67,7 +67,7 @@ namespace WindowsFormsUI
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridCompany)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPersonnel)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,7 +78,7 @@ namespace WindowsFormsUI
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.gridCompany);
+            this.panel1.Controls.Add(this.gridPersonnel);
             this.panel1.Controls.Add(this.btnPersonnelExit);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -107,6 +107,7 @@ namespace WindowsFormsUI
             this.btnDelete.TabIndex = 15;
             this.toolTip1.SetToolTip(this.btnDelete, "Personel Sil");
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -128,6 +129,7 @@ namespace WindowsFormsUI
             this.btnUpdate.TabIndex = 13;
             this.toolTip1.SetToolTip(this.btnUpdate, "Personel Güncelle");
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -381,16 +383,17 @@ namespace WindowsFormsUI
             this.label2.TabIndex = 26;
             this.label2.Text = "Ad:";
             // 
-            // gridCompany
+            // gridPersonnel
             // 
-            this.gridCompany.BackgroundColor = System.Drawing.Color.White;
-            this.gridCompany.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridCompany.Location = new System.Drawing.Point(11, 38);
-            this.gridCompany.Name = "gridCompany";
-            this.gridCompany.RowHeadersWidth = 51;
-            this.gridCompany.RowTemplate.Height = 24;
-            this.gridCompany.Size = new System.Drawing.Size(1592, 809);
-            this.gridCompany.TabIndex = 8;
+            this.gridPersonnel.BackgroundColor = System.Drawing.Color.White;
+            this.gridPersonnel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridPersonnel.Location = new System.Drawing.Point(11, 38);
+            this.gridPersonnel.Name = "gridPersonnel";
+            this.gridPersonnel.RowHeadersWidth = 51;
+            this.gridPersonnel.RowTemplate.Height = 24;
+            this.gridPersonnel.Size = new System.Drawing.Size(1592, 809);
+            this.gridPersonnel.TabIndex = 8;
+            this.gridPersonnel.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridPersonnel_CellClick);
             // 
             // btnPersonnelExit
             // 
@@ -447,7 +450,7 @@ namespace WindowsFormsUI
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridCompany)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPersonnel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -459,7 +462,7 @@ namespace WindowsFormsUI
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView gridCompany;
+        private System.Windows.Forms.DataGridView gridPersonnel;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtPersonelMail;
         private System.Windows.Forms.Label label6;

@@ -22,7 +22,7 @@ namespace BusinessLogicLayer
             else
             {
                 customerTC = 1;
-                   Customer customer = new Customer();
+                Customer customer = new Customer();
                 TcKontrolBusiness tcB = new TcKontrolBusiness();
                 using (CustomerDatabase cdb = new CustomerDatabase())
                 {
@@ -58,6 +58,7 @@ namespace BusinessLogicLayer
                         if (getData > 0) resultReturn = 4;
                     }
                     else resultReturn = -1;
+                    customerTC = 0;
                 }
             }
             return resultReturn;
@@ -68,6 +69,7 @@ namespace BusinessLogicLayer
             if (string.IsNullOrEmpty(Ad) || string.IsNullOrEmpty(Soyad) || string.IsNullOrEmpty(Telefon) || string.IsNullOrEmpty(TC) || string.IsNullOrEmpty(Mail) || string.IsNullOrEmpty(Adres) || string.IsNullOrEmpty(VergiDairesi)) resultReturn = 0;
             else
             {
+                customerTC = 1;
                 Customer customer = new Customer();
                 TcKontrolBusiness tcB = new TcKontrolBusiness();
                 using (CustomerDatabase cdb = new CustomerDatabase())
@@ -93,7 +95,7 @@ namespace BusinessLogicLayer
                             else if (!customer._telefonKontrol2) resultReturn = 2;
                             else if (!customer._tcKontrol) resultReturn = 3;
                             else
-                                getData = cdb.CustomerAdd(customer);
+                                getData = cdb.CustomerUpdate(customer);
                         }
                         else
                         {
@@ -105,7 +107,7 @@ namespace BusinessLogicLayer
                         }
                         if (getData > 0) resultReturn = 4;
                     }
-                    else resultReturn = -1;
+                    else resultReturn = -1; customerTC = 0;
                 }
             }
             return resultReturn;

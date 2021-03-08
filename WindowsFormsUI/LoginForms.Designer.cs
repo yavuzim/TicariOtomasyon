@@ -73,7 +73,7 @@ namespace WindowsFormsUI
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(225, 82);
+            this.label2.Location = new System.Drawing.Point(235, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(166, 41);
             this.label2.TabIndex = 4;
@@ -94,7 +94,7 @@ namespace WindowsFormsUI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(49, 82);
+            this.label1.Location = new System.Drawing.Point(39, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 41);
             this.label1.TabIndex = 4;
