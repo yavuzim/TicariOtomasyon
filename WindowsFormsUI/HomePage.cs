@@ -57,5 +57,17 @@ namespace WindowsFormsUI
             PersonnelForms frm = new PersonnelForms();
             GetForm(frm);
         }
+
+        private void btnGuide_Click(object sender, EventArgs e)
+        {
+            GuideForms frm = new GuideForms();
+            GetForm(frm);
+        }
+
+        private void btnDebt_Click(object sender, EventArgs e)
+        {
+            DebtForms frm = new DebtForms();
+            GetForm(frm);
+        }
     }
 }

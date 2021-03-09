@@ -370,6 +370,7 @@ namespace WindowsFormsUI
             this.btnDebt.Size = new System.Drawing.Size(88, 72);
             this.btnDebt.TabIndex = 0;
             this.btnDebt.UseVisualStyleBackColor = false;
+            this.btnDebt.Click += new System.EventHandler(this.btnDebt_Click);
             // 
             // btnGuide
             // 
@@ -388,6 +389,7 @@ namespace WindowsFormsUI
             this.btnGuide.Size = new System.Drawing.Size(88, 72);
             this.btnGuide.TabIndex = 0;
             this.btnGuide.UseVisualStyleBackColor = false;
+            this.btnGuide.Click += new System.EventHandler(this.btnGuide_Click);
             // 
             // btnCustomer
             // 

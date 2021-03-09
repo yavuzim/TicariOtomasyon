@@ -46,6 +46,7 @@
     <Compile Include="CompanyDatabase.cs" />
     <Compile Include="CustomerDatabase.cs" />
     <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="DebtDatabase.cs" />
     <Compile Include="PersonnelDatabase.cs" />
     <Compile Include="ProductBrandDatabase.cs" />
     <Compile Include="ProductDatabase.cs" />

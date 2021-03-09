@@ -72,6 +72,18 @@
     <Compile Include="CustomerForms.Designer.cs">
       <DependentUpon>CustomerForms.cs</DependentUpon>
     </Compile>
+    <Compile Include="DebtForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebtForms.Designer.cs">
+      <DependentUpon>DebtForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms.Designer.cs">
+      <DependentUpon>GuideForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
     </Compile>
     <Compile Include="LoginForms.Designer.cs">
       <DependentUpon>LoginForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MailForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MailForms.Designer.cs">
+      <DependentUpon>MailForms.cs</DependentUpon>
     </Compile>
     <Compile Include="PersonnelForms.cs">
       <SubType>Form</SubType>
@@ -119,11 +137,20 @@
     <EmbeddedResource Include="CustomerForms.resx">
       <DependentUpon>CustomerForms.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DebtForms.resx">
+      <DependentUpon>DebtForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms.resx">
+      <DependentUpon>GuideForms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForms.resx">
       <DependentUpon>LoginForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MailForms.resx">
+      <DependentUpon>MailForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonnelForms.resx">
       <DependentUpon>PersonnelForms.cs</DependentUpon>
@@ -251,6 +278,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_delete_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-dark-vector-abstract-background-image_302715.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_mailbox_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

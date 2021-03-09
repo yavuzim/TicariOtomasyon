@@ -223,6 +223,16 @@ namespace WindowsFormsUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_mailbox_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_mailbox_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_open_box {
             get {
                 object obj = ResourceManager.GetObject("icons8_open_box", resourceCulture);
@@ -316,6 +326,16 @@ namespace WindowsFormsUI.Properties {
         internal static System.Drawing.Bitmap icons8_user_account_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8_user_account_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_dark_vector_abstract_background_image_302715 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-dark-vector-abstract-background-image_302715", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

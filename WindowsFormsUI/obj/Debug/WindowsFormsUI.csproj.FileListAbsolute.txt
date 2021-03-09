@@ -251,3 +251,6 @@ C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFor
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.exe
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.pdb
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.PersonnelForms.resources
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.GuideForms.resources
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.MailForms.resources
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.DebtForms.resources
