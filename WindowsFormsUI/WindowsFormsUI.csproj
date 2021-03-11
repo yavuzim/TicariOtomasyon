@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BanksForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanksForms.Designer.cs">
+      <DependentUpon>BanksForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="CompanyForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BanksForms.resx">
+      <DependentUpon>BanksForms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CompanyForms.resx">
       <DependentUpon>CompanyForms.cs</DependentUpon>
     </EmbeddedResource>

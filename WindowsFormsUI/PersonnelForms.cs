@@ -100,9 +100,13 @@ namespace WindowsFormsUI
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            PersonnelBusiness pB = new PersonnelBusiness();
-            int getDelete = pB.PersonnelDelete(int.Parse(id));
-            if (getDelete > 0) MessageBox.Show("Kayıt Silindi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (id == null) MessageBox.Show("Kayıt Seçiniz!", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+            {
+                PersonnelBusiness pB = new PersonnelBusiness();
+                int getDelete = pB.PersonnelDelete(int.Parse(id));
+                if (getDelete > 0) MessageBox.Show("Kayıt Silindi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             PersonnelList();
         }
     }

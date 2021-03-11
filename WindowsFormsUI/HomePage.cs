@@ -69,5 +69,11 @@ namespace WindowsFormsUI
             DebtForms frm = new DebtForms();
             GetForm(frm);
         }
+
+        private void btnBank_Click(object sender, EventArgs e)
+        {
+            BanksForms frm = new BanksForms();
+            GetForm(frm);
+        }
     }
 }
