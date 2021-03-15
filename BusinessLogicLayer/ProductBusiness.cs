@@ -10,7 +10,7 @@ namespace BusinessLogicLayer
 {
     public class ProductBusiness
     {
-        public int ProductAdd(string UrunAd, int UrunMarkaId, string UrunModel, string Yil, short UrunAdet, decimal AlisFiyat, decimal SatisFiyat, int Indirim, decimal KDV, string UrunDetay)
+        public int ProductAdd(string UrunAd, int UrunMarkaId, string UrunModel, string Yil, decimal AlisFiyat, decimal SatisFiyat, int Indirim, decimal KDV, string UrunDetay)
         {
             int resultReturn = 0;
             Products product = new Products();
@@ -21,7 +21,6 @@ namespace BusinessLogicLayer
                 product.UrunMarkaId = UrunMarkaId.ToString();
                 product.UrunModel = UrunModel;
                 product.Yil = Yil;
-                product.UrunAdet = UrunAdet;
                 product.AlisFiyat = AlisFiyat;
                 product.SatisFiyat = SatisFiyat;
                 product.Indirim = Indirim;
@@ -42,7 +41,7 @@ namespace BusinessLogicLayer
             }
             return resultReturn;
         }
-        public int ProductUpdate(int UrunId, string UrunAd, int UrunMarkaId, string UrunModel, string Yil, short UrunAdet, decimal AlisFiyat, decimal SatisFiyat, int Indirim, decimal KDV, string UrunDetay)
+        public int ProductUpdate(int UrunId, string UrunAd, int UrunMarkaId, string UrunModel, string Yil,decimal AlisFiyat, decimal SatisFiyat, int Indirim, decimal KDV, string UrunDetay)
         {
             int resultReturn;
             using (ProductDatabase pDal = new ProductDatabase())
@@ -54,7 +53,6 @@ namespace BusinessLogicLayer
                     UrunMarkaId = UrunMarkaId.ToString(),
                     UrunModel = UrunModel,
                     Yil = Yil,
-                    UrunAdet = UrunAdet,
                     AlisFiyat = AlisFiyat,
                     SatisFiyat = SatisFiyat,
                     Indirim = Indirim,
@@ -89,12 +87,11 @@ namespace BusinessLogicLayer
                     product.UrunMarkaId = read.GetString(2);
                     product.UrunModel = read.GetString(3);
                     product.Yil = read.GetString(4);
-                    product.UrunAdet = read.GetInt16(5);
-                    product.AlisFiyat = read.GetDecimal(6);
-                    product.SatisFiyat = read.GetDecimal(7);
-                    product.Indirim = read.GetInt32(8);
-                    product.KDV = read.GetDecimal(9);
-                    product.UrunDetay = read.GetString(10);
+                    product.AlisFiyat = read.GetDecimal(5);
+                    product.SatisFiyat = read.GetDecimal(6);
+                    product.Indirim = read.GetInt32(7);
+                    product.KDV = read.GetDecimal(8);
+                    product.UrunDetay = read.GetString(9);
                     productList.Add(product);
                 }
             }

@@ -39,13 +39,12 @@ namespace WindowsFormsUI
             gridProducts.Columns[2].HeaderText = "ÜRÜN MARKA";
             gridProducts.Columns[3].HeaderText = "ÜRÜN MODEL";
             gridProducts.Columns[4].HeaderText = "YIL";
-            gridProducts.Columns[5].HeaderText = "ADET";
-            gridProducts.Columns[6].HeaderText = "ALIŞ FİYAT";
-            gridProducts.Columns[7].HeaderText = "SATIŞ FİYAT";
-            gridProducts.Columns[8].HeaderText = "İNDİRİM";
-            gridProducts.Columns[9].HeaderText = "KDV ORANI";
-            gridProducts.Columns[10].HeaderText = "DETAY";
-            gridProducts.Columns[10].Width = 312;
+            gridProducts.Columns[5].HeaderText = "ALIŞ FİYAT";
+            gridProducts.Columns[6].HeaderText = "SATIŞ FİYAT";
+            gridProducts.Columns[7].HeaderText = "İNDİRİM";
+            gridProducts.Columns[8].HeaderText = "KDV ORANI";
+            gridProducts.Columns[9].HeaderText = "DETAY";
+            gridProducts.Columns[9].Width = 312;
         }
         private void ProductForms_Load(object sender, EventArgs e)
         {
@@ -74,7 +73,7 @@ namespace WindowsFormsUI
             secilen = gridProducts.SelectedCells[0].RowIndex;
             Pb.degerler.Clear();
             PEF.degerler.Clear();
-            for (int i = 0; i < 11; i++)
+            for (int i = 0; i < 10; i++)
             {
                 string d = gridProducts.Rows[secilen].Cells[i].Value.ToString();
                 Pb.degerler.Add(d);

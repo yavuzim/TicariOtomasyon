@@ -17,7 +17,6 @@ namespace DatabaseLogicLayer
             cmd.Parameters.Add("@UrunMarkaId", System.Data.SqlDbType.Int).Value = product.UrunMarkaId;
             cmd.Parameters.Add("@UrunModel", System.Data.SqlDbType.NVarChar).Value = product.UrunModel;
             cmd.Parameters.Add("@Yil", System.Data.SqlDbType.NVarChar).Value = product.Yil;
-            cmd.Parameters.Add("@UrunAdet", System.Data.SqlDbType.SmallInt).Value = product.UrunAdet;
             cmd.Parameters.Add("@AlisFiyat", System.Data.SqlDbType.Decimal).Value = product.AlisFiyat;
             cmd.Parameters.Add("@SatisFiyat", System.Data.SqlDbType.Decimal).Value = product.SatisFiyat;
             cmd.Parameters.Add("@Indirim", System.Data.SqlDbType.Int).Value = product.Indirim;
@@ -37,7 +36,6 @@ namespace DatabaseLogicLayer
             cmd.Parameters.Add("@UrunMarkaId", System.Data.SqlDbType.Int).Value = product.UrunMarkaId;
             cmd.Parameters.Add("@UrunModel", System.Data.SqlDbType.NVarChar).Value = product.UrunModel;
             cmd.Parameters.Add("@Yil", System.Data.SqlDbType.NVarChar).Value = product.Yil;
-            cmd.Parameters.Add("@UrunAdet", System.Data.SqlDbType.SmallInt).Value = product.UrunAdet;
             cmd.Parameters.Add("@AlisFiyat", System.Data.SqlDbType.Decimal).Value = product.AlisFiyat;
             cmd.Parameters.Add("@SatisFiyat", System.Data.SqlDbType.Decimal).Value = product.SatisFiyat;
             cmd.Parameters.Add("@Indirim", System.Data.SqlDbType.Int).Value = product.Indirim;

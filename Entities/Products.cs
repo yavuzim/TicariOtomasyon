@@ -62,15 +62,6 @@ namespace Entities
                 else YilLength = false;
             }
         }
-        public short UrunAdet
-        {
-            get { return this._adet; }
-            set
-            {
-                if (value > 0) _adet = value;
-                else AlisKontrol = false;
-            }
-        }
         public decimal AlisFiyat
         {
             get { return this._alisFiyat; }

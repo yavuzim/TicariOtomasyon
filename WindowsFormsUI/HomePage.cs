@@ -35,7 +35,7 @@ namespace WindowsFormsUI
 
         private void btnCustomer_Click(object sender, EventArgs e)
         {
-            CustomerForms frm = new CustomerForms();
+            SaleForms frm = new SaleForms();
             GetForm(frm);
         }
 
@@ -73,6 +73,42 @@ namespace WindowsFormsUI
         private void btnBank_Click(object sender, EventArgs e)
         {
             BanksForms frm = new BanksForms();
+            GetForm(frm);
+        }
+
+        private void btnInvoice_Click(object sender, EventArgs e)
+        {
+            InvoiceForms frm = new InvoiceForms();
+            GetForm(frm);
+        }
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
+        private void btnHomePage_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.btnHomePage.BackgroundImageLayout = ImageLayout.Stretch;
+        }
+
+        private void btnHomePage_MouseLeave(object sender, EventArgs e)
+        {
+            this.btnHomePage.BackgroundImageLayout = ImageLayout.Center;
+        }
+
+        private void btnProduct_MouseMove_1(object sender, MouseEventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.BackgroundImageLayout = ImageLayout.Stretch;
+
+        }
+
+        private void btnProduct_MouseLeave(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.BackgroundImageLayout = ImageLayout.Center;
+
+        }
+
+        private void btnStock_Click(object sender, EventArgs e)
+        {
+            StockForms frm = new StockForms();
             GetForm(frm);
         }
     }

@@ -37,7 +37,7 @@ namespace WindowsFormsUI
                 txtProductVAT.Text = "0";
                 txtProductNumber.Text = "0";
             }
-            int getProduct = pB.ProductAdd(txtProductName.Text, cmdProductBrand.SelectedIndex + 1, txtProductModel.Text, txtProductYear.Text, short.Parse(txtProductNumber.Text), decimal.Parse(txtProductCost.Text), decimal.Parse(txtProductSales.Text), int.Parse(txtPrdocutDiscount.Text), decimal.Parse(txtProductVAT.Text), txtProductExplanation.Text);
+            int getProduct = pB.ProductAdd(txtProductName.Text, cmdProductBrand.SelectedIndex + 1, txtProductModel.Text, txtProductYear.Text, decimal.Parse(txtProductCost.Text), decimal.Parse(txtProductSales.Text), int.Parse(txtPrdocutDiscount.Text), decimal.Parse(txtProductVAT.Text), txtProductExplanation.Text);
             if (getProduct == -1) MessageBox.Show("Boş Geçilmez", "UYARI!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else if (getProduct == 0) MessageBox.Show("Yıl Bilgisi Hatalı", "UYARI!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else if (getProduct == 1) MessageBox.Show("Alış ve Satış Fiyat Bilgileri Hatalı", "UYARI!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -72,19 +72,18 @@ namespace WindowsFormsUI
                 cmdProductBrand.Text = degerler[2].ToString();
                 txtProductModel.Text = degerler[3].ToString();
                 txtProductYear.Text = degerler[4].ToString();
-                txtProductNumber.Text = degerler[5].ToString();
-                txtProductCost.Text = degerler[6].ToString();
-                txtProductSales.Text = degerler[7].ToString();
-                txtPrdocutDiscount.Text = degerler[8].ToString();
-                txtProductVAT.Text = degerler[9].ToString();
-                txtProductExplanation.Text = degerler[10].ToString();
+                txtProductCost.Text = degerler[5].ToString();
+                txtProductSales.Text = degerler[6].ToString();
+                txtPrdocutDiscount.Text = degerler[7].ToString();
+                txtProductVAT.Text = degerler[8].ToString();
+                txtProductExplanation.Text = degerler[9].ToString();
             }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             ProductBusiness pB = new ProductBusiness();
-            int getProduct = pB.ProductUpdate(id, txtProductName.Text, cmdProductBrand.SelectedIndex + 1, txtProductModel.Text, txtProductYear.Text, short.Parse(txtProductNumber.Text), decimal.Parse(txtProductCost.Text), decimal.Parse(txtProductSales.Text), int.Parse(txtPrdocutDiscount.Text), decimal.Parse(txtProductVAT.Text), txtProductExplanation.Text);
+            int getProduct = pB.ProductUpdate(id, txtProductName.Text, cmdProductBrand.SelectedIndex + 1, txtProductModel.Text, txtProductYear.Text, decimal.Parse(txtProductCost.Text), decimal.Parse(txtProductSales.Text), int.Parse(txtPrdocutDiscount.Text), decimal.Parse(txtProductVAT.Text), txtProductExplanation.Text);
             if (getProduct == -1) MessageBox.Show("Boş Geçilmez", "UYARI!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else if (getProduct == 0) MessageBox.Show("Yıl Bilgisi Hatalı", "UYARI!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else if (getProduct == 1) MessageBox.Show("Alış ve Satış Fiyat Bilgileri Hatalı", "UYARI!", MessageBoxButtons.OK, MessageBoxIcon.Information);
