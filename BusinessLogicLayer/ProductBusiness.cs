@@ -41,7 +41,7 @@ namespace BusinessLogicLayer
             }
             return resultReturn;
         }
-        public int ProductUpdate(int UrunId, string UrunAd, int UrunMarkaId, string UrunModel, string Yil,decimal AlisFiyat, decimal SatisFiyat, int Indirim, decimal KDV, string UrunDetay)
+        public int ProductUpdate(int UrunId, string UrunAd, int UrunMarkaId, string UrunModel, string Yil, decimal AlisFiyat, decimal SatisFiyat, int Indirim, decimal KDV, string UrunDetay)
         {
             int resultReturn;
             using (ProductDatabase pDal = new ProductDatabase())
@@ -92,11 +92,39 @@ namespace BusinessLogicLayer
                     product.Indirim = read.GetInt32(7);
                     product.KDV = read.GetDecimal(8);
                     product.UrunDetay = read.GetString(9);
+                    product.Durum = read.GetBoolean(10);
                     productList.Add(product);
                 }
             }
             read.Close();
             return productList;
         }
+        //public List<Products> ProductListId(int id)
+        //{
+        //    SqlDataReader read = null;
+        //    List<Products> productList = new List<Products>();
+        //    using (ProductDatabase dll = new ProductDatabase())
+        //    {
+        //        read = dll.ProductList();
+        //        while (read.Read())
+        //        {
+        //            Products product = new Products();
+        //            product.UrunID = read.GetInt32(0);
+        //            product.UrunAd = read.GetString(1);
+        //            product.UrunMarkaId = read.GetString(2);
+        //            product.UrunModel = read.GetString(3);
+        //            product.Yil = read.GetString(4);
+        //            product.AlisFiyat = read.GetDecimal(5);
+        //            product.SatisFiyat = read.GetDecimal(6);
+        //            product.Indirim = read.GetInt32(7);
+        //            product.KDV = read.GetDecimal(8);
+        //            product.UrunDetay = read.GetString(9);
+        //            product.Durum = read.GetBoolean(10);
+        //            productList.Add(product);
+        //        }
+        //    }
+        //    read.Close();
+        //    return productList;
+        //}
     }
 }

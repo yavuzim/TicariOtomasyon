@@ -52,6 +52,7 @@
     <Compile Include="ProductBrandDatabase.cs" />
     <Compile Include="ProductDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockDatabase.cs" />
     <Compile Include="SystemUserDatabase.cs" />
     <Compile Include="TaskDatabase.cs" />
     <Compile Include="TcKontrolDatabase.cs" />

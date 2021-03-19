@@ -50,6 +50,7 @@
     <Compile Include="ProductBrandBusiness.cs" />
     <Compile Include="ProductBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockBusiness.cs" />
     <Compile Include="SystemUserService.cs" />
     <Compile Include="TcKontrolBusiness.cs" />
   </ItemGroup>

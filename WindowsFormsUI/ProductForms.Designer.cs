@@ -29,14 +29,14 @@ namespace WindowsFormsUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductForms));
             this.label1 = new System.Windows.Forms.Label();
             this.gridProducts = new System.Windows.Forms.DataGridView();
-            this.btnExplanation = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnProductExit = new System.Windows.Forms.Button();
-            this.btnPage = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridProducts)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,57 +53,18 @@ namespace WindowsFormsUI
             // 
             this.gridProducts.BackgroundColor = System.Drawing.Color.White;
             this.gridProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridProducts.Location = new System.Drawing.Point(12, 52);
+            this.gridProducts.Location = new System.Drawing.Point(12, 100);
             this.gridProducts.Name = "gridProducts";
             this.gridProducts.RowHeadersWidth = 51;
             this.gridProducts.RowTemplate.Height = 24;
-            this.gridProducts.Size = new System.Drawing.Size(1621, 742);
+            this.gridProducts.Size = new System.Drawing.Size(1900, 760);
             this.gridProducts.TabIndex = 2;
             this.gridProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridProducts_CellClick);
             // 
-            // btnExplanation
-            // 
-            this.btnExplanation.BackColor = System.Drawing.Color.White;
-            this.btnExplanation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExplanation.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnExplanation.FlatAppearance.BorderSize = 2;
-            this.btnExplanation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnExplanation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnExplanation.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExplanation.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnExplanation.ForeColor = System.Drawing.Color.Black;
-            this.btnExplanation.Location = new System.Drawing.Point(1640, 250);
-            this.btnExplanation.Name = "btnExplanation";
-            this.btnExplanation.Size = new System.Drawing.Size(226, 60);
-            this.btnExplanation.TabIndex = 3;
-            this.btnExplanation.Text = "DETAY";
-            this.btnExplanation.UseVisualStyleBackColor = false;
-            this.btnExplanation.Click += new System.EventHandler(this.btnExplanation_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.White;
-            this.btnDelete.BackgroundImage = global::WindowsFormsUI.Properties.Resources.icons8_delete_48;
-            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnDelete.FlatAppearance.BorderSize = 2;
-            this.btnDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(1640, 184);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(226, 60);
-            this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "SİL";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.White;
-            this.btnUpdate.BackgroundImage = global::WindowsFormsUI.Properties.Resources.icons8_update_48;
+            this.btnUpdate.BackColor = System.Drawing.Color.DimGray;
+            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
             this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -112,19 +73,20 @@ namespace WindowsFormsUI
             this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(1640, 118);
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(247, 47);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(226, 60);
+            this.btnUpdate.Size = new System.Drawing.Size(226, 47);
             this.btnUpdate.TabIndex = 3;
-            this.btnUpdate.Text = "GÜNCELLE";
+            this.btnUpdate.Text = "Ürün Güncelle";
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.White;
-            this.btnAdd.BackgroundImage = global::WindowsFormsUI.Properties.Resources.icons8_add_new_48;
+            this.btnAdd.BackColor = System.Drawing.Color.DimGray;
+            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -133,12 +95,13 @@ namespace WindowsFormsUI
             this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(1640, 52);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(15, 47);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(226, 60);
+            this.btnAdd.Size = new System.Drawing.Size(226, 47);
             this.btnAdd.TabIndex = 3;
-            this.btnAdd.Text = "EKLE";
+            this.btnAdd.Text = "Ürün Ekle";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -159,24 +122,49 @@ namespace WindowsFormsUI
             this.btnProductExit.UseVisualStyleBackColor = true;
             this.btnProductExit.Click += new System.EventHandler(this.btnProductExit_Click);
             // 
-            // btnPage
+            // button1
             // 
-            this.btnPage.BackColor = System.Drawing.Color.White;
-            this.btnPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPage.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnPage.FlatAppearance.BorderSize = 2;
-            this.btnPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnPage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPage.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnPage.ForeColor = System.Drawing.Color.Black;
-            this.btnPage.Location = new System.Drawing.Point(1640, 316);
-            this.btnPage.Name = "btnPage";
-            this.btnPage.Size = new System.Drawing.Size(226, 60);
-            this.btnPage.TabIndex = 3;
-            this.btnPage.Text = "SAYFA YENİLE";
-            this.btnPage.UseVisualStyleBackColor = false;
-            this.btnPage.Click += new System.EventHandler(this.btnPage_Click);
+            this.button1.BackColor = System.Drawing.Color.DimGray;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(480, 47);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(226, 47);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Ürün Sil";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.DimGray;
+            this.btnRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.BackgroundImage")));
+            this.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRefresh.FlatAppearance.BorderSize = 2;
+            this.btnRefresh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRefresh.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(712, 47);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(226, 47);
+            this.btnRefresh.TabIndex = 3;
+            this.btnRefresh.Text = "Yenile";
+            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // ProductForms
             // 
@@ -184,9 +172,8 @@ namespace WindowsFormsUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.btnPage);
-            this.Controls.Add(this.btnExplanation);
-            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.gridProducts);
@@ -210,8 +197,7 @@ namespace WindowsFormsUI
         private System.Windows.Forms.DataGridView gridProducts;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnExplanation;
-        private System.Windows.Forms.Button btnPage;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }

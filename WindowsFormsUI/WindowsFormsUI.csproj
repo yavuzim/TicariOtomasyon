@@ -118,12 +118,6 @@
     <Compile Include="ProductAddUpdate.Designer.cs">
       <DependentUpon>ProductAddUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductExplanationForms.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProductExplanationForms.Designer.cs">
-      <DependentUpon>ProductExplanationForms.cs</DependentUpon>
-    </Compile>
     <Compile Include="ProductForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,9 +167,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProductAddUpdate.resx">
       <DependentUpon>ProductAddUpdate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProductExplanationForms.resx">
-      <DependentUpon>ProductExplanationForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductForms.resx">
       <DependentUpon>ProductForms.cs</DependentUpon>

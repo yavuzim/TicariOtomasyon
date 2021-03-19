@@ -29,13 +29,12 @@ namespace WindowsFormsUI
         private void btnAdd_Click(object sender, EventArgs e)
         {
             ProductBusiness pB = new ProductBusiness();
-            if (txtProductCost.Text == "" || txtProductSales.Text == "" || txtPrdocutDiscount.Text == "" || txtProductVAT.Text == "" || txtProductNumber.Text == "")
+            if (txtProductCost.Text == "" || txtProductSales.Text == "" || txtPrdocutDiscount.Text == "" || txtProductVAT.Text == "")
             {
                 txtProductCost.Text = "0";
                 txtProductSales.Text = "0";
                 txtPrdocutDiscount.Text = "0";
                 txtProductVAT.Text = "0";
-                txtProductNumber.Text = "0";
             }
             int getProduct = pB.ProductAdd(txtProductName.Text, cmdProductBrand.SelectedIndex + 1, txtProductModel.Text, txtProductYear.Text, decimal.Parse(txtProductCost.Text), decimal.Parse(txtProductSales.Text), int.Parse(txtPrdocutDiscount.Text), decimal.Parse(txtProductVAT.Text), txtProductExplanation.Text);
             if (getProduct == -1) MessageBox.Show("Boş Geçilmez", "UYARI!", MessageBoxButtons.OK, MessageBoxIcon.Information);

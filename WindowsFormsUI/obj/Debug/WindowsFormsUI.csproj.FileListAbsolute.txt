@@ -237,12 +237,9 @@ C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\bin\Debug\ja\DevExpr
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\bin\Debug\ru\DevExpress.Pdf.v20.2.Core.resources.dll
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.csprojAssemblyReference.cache
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.CompanyForms.resources
-C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.CustomerAddUpdate.resources
-C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.CustomerForms.resources
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.HomePage.resources
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.LoginForms.resources
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.ProductAddUpdate.resources
-C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.ProductExplanationForms.resources
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.ProductForms.resources
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.Properties.Resources.resources
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.csproj.GenerateResource.cache
@@ -257,3 +254,4 @@ C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFor
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.BanksForms.resources
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.InvoiceForms.resources
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.SaleForms.resources
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.StockForms.resources

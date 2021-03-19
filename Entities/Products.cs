@@ -103,5 +103,6 @@ namespace Entities
             get;
             set;
         }
+        public bool Durum { get; set; }
     }
 }

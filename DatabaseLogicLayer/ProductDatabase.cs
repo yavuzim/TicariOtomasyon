@@ -28,7 +28,7 @@ namespace DatabaseLogicLayer
             return resultReturn;
         }
         public int ProductUpdate(Products product)
-        {
+        {            
             cmd = new SqlCommand("UrunGuncelle", con);
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.Parameters.Add("@UrunID", System.Data.SqlDbType.Int).Value = product.UrunID;
@@ -46,11 +46,30 @@ namespace DatabaseLogicLayer
             ConnectionWizard();
             return resultReturn;
         }
-        // Delete
+        public int ProductBitUpdate(int id,byte _bit)
+        {
+            cmd = new SqlCommand("UrunDurumGuncelle", con);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.Add("@UrunID", System.Data.SqlDbType.Int).Value = id;
+            cmd.Parameters.Add("@Durum", System.Data.SqlDbType.Bit).Value = _bit;
+            ConnectionWizard();
+            int resultReturn = cmd.ExecuteNonQuery();
+            ConnectionWizard();
+            return resultReturn;
+        }
         public SqlDataReader ProductList()
         {
-            cmd = new SqlCommand("UrunLisele", con);
+            cmd = new SqlCommand("UrunListele", con);
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            ConnectionWizard();
+            reader = cmd.ExecuteReader();
+            return reader;
+        }
+        public SqlDataReader ProductListId(int id)
+        {
+            cmd = new SqlCommand("UrunListeleId", con);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.Add("@UrunID", System.Data.SqlDbType.Int).Value = id;
             ConnectionWizard();
             reader = cmd.ExecuteReader();
             return reader;
