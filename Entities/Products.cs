@@ -10,7 +10,6 @@ namespace Entities
     {
         string _urunAd, _yil;
         decimal _alisFiyat, _satisFiyat, _kdv;
-        short _adet;
         int _indirim;
         public bool YilLength = true, AlisKontrol = true, SatisKontrol = true, IndirimKontrol = true, KdvKontrol = true, adetKontrol = true;
         public int UrunID

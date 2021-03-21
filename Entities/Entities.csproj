@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Banks.cs" />
+    <Compile Include="Brand.cs" />
     <Compile Include="Company.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="CustomerPersonnelBaseType.cs" />
@@ -50,7 +51,7 @@
     <Compile Include="ProductBrand.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stock.cs" />
+    <Compile Include="StockList.cs" />
     <Compile Include="SystemUser.cs" />
     <Compile Include="PersonnelTasks.cs" />
   </ItemGroup>

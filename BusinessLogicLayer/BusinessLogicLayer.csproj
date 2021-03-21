@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BanksBusiness.cs" />
+    <Compile Include="BrandBusiness.cs" />
     <Compile Include="CompanyBusiness.cs" />
     <Compile Include="CustomerBusiness.cs" />
     <Compile Include="DebtBusiness.cs" />

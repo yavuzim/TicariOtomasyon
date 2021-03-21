@@ -19,9 +19,9 @@ namespace BusinessLogicLayer
                 else if (StokAdet < 0) resulReturn = 1;
                 else
                 {
-                    Stock stock = new Stock()
+                    StockList stock = new StockList()
                     {
-                        UrunId = UrunId.ToString(),
+                        UrunAd = UrunId.ToString(),
                         StokAdet = StokAdet
                     };
                     resulReturn = sD.StockAdd(stock);
@@ -38,6 +38,30 @@ namespace BusinessLogicLayer
                 }
             }
             return resulReturn;
+        }
+        public List<StockList> StockList()
+        {
+            List<StockList> stockList = new List<StockList>();
+            SqlDataReader read = null; StockList stock;
+            using (StockDatabase sD = new StockDatabase())
+            {
+                read = sD.StockList();
+                while (read.Read())
+                {
+                    stock = new StockList()
+                    {
+                        StokID = read.GetInt32(0),
+                        UrunAd = read.GetString(1).ToString(),
+                        UrunMarkaId = read.GetInt32(2).ToString(),
+                        UrunModel = read.GetString(3).ToString(),
+                        UrunDetay = read.GetString(4).ToString(),
+                        StokAdet = read.GetInt16(5)
+                    };
+                    stockList.Add(stock);
+                }
+                read.Close();
+            }
+            return stockList;
         }
     }
 }

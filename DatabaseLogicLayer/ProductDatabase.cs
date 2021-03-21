@@ -22,6 +22,7 @@ namespace DatabaseLogicLayer
             cmd.Parameters.Add("@Indirim", System.Data.SqlDbType.Int).Value = product.Indirim;
             cmd.Parameters.Add("@KDV", System.Data.SqlDbType.Decimal).Value = product.KDV;
             cmd.Parameters.Add("@UrunDetay", System.Data.SqlDbType.NVarChar).Value = product.UrunDetay;
+            cmd.Parameters.Add("@Durum", System.Data.SqlDbType.Bit).Value = 0;
             ConnectionWizard();
             int resultReturn = cmd.ExecuteNonQuery();
             con.Close();

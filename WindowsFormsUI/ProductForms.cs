@@ -68,8 +68,7 @@ namespace WindowsFormsUI
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            ProductAddUpdate frm = new ProductAddUpdate();
-            frm.ShowDialog();
+            Pb.ShowDialog();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

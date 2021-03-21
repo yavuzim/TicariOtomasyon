@@ -22,49 +22,36 @@ namespace WindowsFormsUI
         {
             this.Close();
         }
-        void ProductsList()
+        void StockList()
         {
-            ProductBusiness pB = new ProductBusiness();
-            List<Products> getProducts = pB.ProductList();
-            gridStocks.DataSource = getProducts;
-            gridStocks.RowHeadersVisible = false;
-            gridStocks.Columns[0].Visible = false;
-            for (int i = 4; i < gridStocks.Columns.Count; i++)
-            {
-                gridStocks.Columns[i].Visible = false;
-            }
-            gridStocks.Columns[1].HeaderText = "ÜRÜN AD";
-            gridStocks.Columns[2].HeaderText = "ÜRÜN MARKA";
-            gridStocks.Columns[3].HeaderText = "ÜRÜN MODEL";
-            gridStocks.Columns[3].Width = 180;
-        }
-        private void StockForms_Load(object sender, EventArgs e)
-        {
-            ProductsList();
-        }
-        int secilen;
-        string id;
-        private void gridStocks_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            secilen = gridStocks.SelectedCells[0].RowIndex;
-            id = gridStocks.Rows[secilen].Cells[0].Value.ToString();
-            lblName.Text = gridStocks.Rows[secilen].Cells[1].Value.ToString();
-            lblBrand.Text = gridStocks.Rows[secilen].Cells[2].Value.ToString();
-            lblModel.Text = gridStocks.Rows[secilen].Cells[3].Value.ToString();
+
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void StockForms_Load(object sender, EventArgs e)
         {
-            string message = "";
-            txtNumber.Minimum = 0;
-            txtNumber.Maximum = short.MaxValue;
-            string adet = txtNumber.Value.ToString();
+            BrandBusiness bbusiness = new BrandBusiness();
+            List<Brand> brandList = bbusiness.BrandList();
             StockBusiness sB = new StockBusiness();
-            int getStock = sB.StockAdd(id,short.Parse(adet));
-            if (getStock == 0) message = "Lütfen Ürün Seçiniz!";
-            else if (getStock ==1) message = "Lütfen Adet Değerini En Az 0 Giriniz!";
-            else if (getStock ==2) message = lblName.Text + " " + "Ürününe Stok Eklendi";
-            MessageBox.Show(message, "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            List<StockList> stockList = sB.StockList();
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.DataSource = stockList;
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[2].Visible = false;
+            dataGridView1.Columns[4].Visible = false;
+            dataGridView1.Columns[1].Width = 253;
+            dataGridView1.Columns[3].Width = 100;
+            dataGridView1.Columns[5].Width = 100;
+            for (int i = 0; i < stockList.Count; i++)
+            {
+                chart1.Series["Urun"].Points.Add(stockList[i].StokAdet);
+                chart1.Series["Urun"].Points[i].AxisLabel = stockList[i].UrunAd.ToString() + " - " + stockList[i].UrunModel.ToString();
+            }
+        }
+
+        private void btnAddUpdate_Click(object sender, EventArgs e)
+        {
+            StockAddUpdate frm = new StockAddUpdate();
+            frm.ShowDialog();
         }
     }
 }
