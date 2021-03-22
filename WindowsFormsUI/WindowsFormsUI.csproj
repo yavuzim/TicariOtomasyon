@@ -66,18 +66,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BanksForms.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BanksForms.Designer.cs">
-      <DependentUpon>BanksForms.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CompanyForms.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CompanyForms.Designer.cs">
-      <DependentUpon>CompanyForms.cs</DependentUpon>
-    </Compile>
     <Compile Include="DebtForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,12 +140,6 @@
     <Compile Include="StockForms.Designer.cs">
       <DependentUpon>StockForms.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BanksForms.resx">
-      <DependentUpon>BanksForms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CompanyForms.resx">
-      <DependentUpon>CompanyForms.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DebtForms.resx">
       <DependentUpon>DebtForms.cs</DependentUpon>
     </EmbeddedResource>

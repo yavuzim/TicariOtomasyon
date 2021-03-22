@@ -119,7 +119,7 @@ namespace WindowsFormsUI
             this.groupBox2.Controls.Add(this.lblBrand);
             this.groupBox2.Controls.Add(this.lblName);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.Location = new System.Drawing.Point(425, 144);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(519, 360);
@@ -129,9 +129,10 @@ namespace WindowsFormsUI
             // 
             // txtNumber
             // 
+            this.txtNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtNumber.Location = new System.Drawing.Point(153, 221);
             this.txtNumber.Name = "txtNumber";
-            this.txtNumber.Size = new System.Drawing.Size(310, 30);
+            this.txtNumber.Size = new System.Drawing.Size(310, 24);
             this.txtNumber.TabIndex = 20;
             // 
             // btnAdd
@@ -180,77 +181,77 @@ namespace WindowsFormsUI
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.Location = new System.Drawing.Point(15, 219);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 25);
+            this.label8.Size = new System.Drawing.Size(41, 18);
             this.label8.TabIndex = 16;
             this.label8.Text = "Adet:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(15, 162);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 25);
+            this.label4.Size = new System.Drawing.Size(53, 18);
             this.label4.TabIndex = 16;
             this.label4.Text = "Model:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(15, 108);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 25);
+            this.label3.Size = new System.Drawing.Size(54, 18);
             this.label3.TabIndex = 16;
             this.label3.Text = "Marka:";
             // 
             // lblModel
             // 
             this.lblModel.AutoSize = true;
-            this.lblModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblModel.Location = new System.Drawing.Point(172, 162);
             this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(60, 25);
+            this.lblModel.Size = new System.Drawing.Size(38, 18);
             this.lblModel.TabIndex = 16;
             this.lblModel.Text = "------";
             // 
             // lblBrand
             // 
             this.lblBrand.AutoSize = true;
-            this.lblBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblBrand.Location = new System.Drawing.Point(172, 108);
             this.lblBrand.Name = "lblBrand";
-            this.lblBrand.Size = new System.Drawing.Size(60, 25);
+            this.lblBrand.Size = new System.Drawing.Size(38, 18);
             this.lblBrand.TabIndex = 16;
             this.lblBrand.Text = "------";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblName.Location = new System.Drawing.Point(172, 63);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(60, 25);
+            this.lblName.Size = new System.Drawing.Size(38, 18);
             this.lblName.TabIndex = 16;
             this.lblName.Text = "------";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(15, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 25);
+            this.label2.Size = new System.Drawing.Size(68, 18);
             this.label2.TabIndex = 16;
             this.label2.Text = "Ürün Adı:";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.gridStocks);
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(19, 144);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(389, 360);
@@ -260,13 +261,15 @@ namespace WindowsFormsUI
             // 
             // gridStocks
             // 
+            this.gridStocks.BackgroundColor = System.Drawing.Color.White;
+            this.gridStocks.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridStocks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridStocks.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridStocks.Location = new System.Drawing.Point(3, 26);
+            this.gridStocks.Location = new System.Drawing.Point(3, 21);
             this.gridStocks.Name = "gridStocks";
             this.gridStocks.RowHeadersWidth = 51;
             this.gridStocks.RowTemplate.Height = 24;
-            this.gridStocks.Size = new System.Drawing.Size(383, 331);
+            this.gridStocks.Size = new System.Drawing.Size(383, 336);
             this.gridStocks.TabIndex = 13;
             this.gridStocks.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridStocks_CellClick);
             // 

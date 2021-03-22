@@ -40,28 +40,7 @@ namespace WindowsFormsUI
             gridCustomer.Columns[3].Width = 284;
             gridCustomer.Columns[4].Width = 284;
             gridCustomer.Columns[6].Width = 286;
-            CompanyBusiness cB = new CompanyBusiness();
-            List<Company> getData = cB.CompanyList();
-            gridCompany.DataSource = getData;
-            gridCompany.RowHeadersVisible = false;
-            gridCompany.Columns[0].Visible = false;
-            gridCompany.Columns[1].Visible = false;
-            gridCompany.Columns[2].Visible = false;
-            gridCompany.Columns[4].Visible = false;
-            gridCompany.Columns[5].Visible = false;
-            gridCompany.Columns[11].Visible = false;
-            gridCompany.Columns[12].Visible = false;
-            gridCompany.Columns[13].Visible = false;
-            gridCompany.Columns[14].Visible = false;
-            gridCompany.Columns[15].Visible = false;
-            gridCompany.Columns[16].Visible = false;
-            gridCompany.Columns[17].Visible = false;
-            gridCompany.Columns[3].Width = 240;
-            gridCompany.Columns[6].Width = 240;
-            gridCompany.Columns[7].Width = 240;
-            gridCompany.Columns[8].Width = 240;
-            gridCompany.Columns[9].Width = 240;
-            gridCompany.Columns[10].Width = 234;
+           
         }
         int secilen;
         string email;

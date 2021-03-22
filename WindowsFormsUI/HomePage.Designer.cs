@@ -37,12 +37,10 @@ namespace WindowsFormsUI
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,9 +54,7 @@ namespace WindowsFormsUI
             this.btnGuide = new System.Windows.Forms.Button();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.btnStaff = new System.Windows.Forms.Button();
-            this.btnBank = new System.Windows.Forms.Button();
             this.btnStock = new System.Windows.Forms.Button();
-            this.btnCompany = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
             this.btnHomePage = new System.Windows.Forms.Button();
             this.FullPanel.SuspendLayout();
@@ -94,12 +90,10 @@ namespace WindowsFormsUI
             this.TopPanel.Controls.Add(this.label13);
             this.TopPanel.Controls.Add(this.label12);
             this.TopPanel.Controls.Add(this.label11);
-            this.TopPanel.Controls.Add(this.label10);
             this.TopPanel.Controls.Add(this.label9);
             this.TopPanel.Controls.Add(this.label8);
             this.TopPanel.Controls.Add(this.label7);
             this.TopPanel.Controls.Add(this.label6);
-            this.TopPanel.Controls.Add(this.label5);
             this.TopPanel.Controls.Add(this.label4);
             this.TopPanel.Controls.Add(this.label3);
             this.TopPanel.Controls.Add(this.label2);
@@ -113,9 +107,7 @@ namespace WindowsFormsUI
             this.TopPanel.Controls.Add(this.btnGuide);
             this.TopPanel.Controls.Add(this.btnCustomer);
             this.TopPanel.Controls.Add(this.btnStaff);
-            this.TopPanel.Controls.Add(this.btnBank);
             this.TopPanel.Controls.Add(this.btnStock);
-            this.TopPanel.Controls.Add(this.btnCompany);
             this.TopPanel.Controls.Add(this.btnProduct);
             this.TopPanel.Controls.Add(this.btnHomePage);
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -129,7 +121,7 @@ namespace WindowsFormsUI
             this.label14.AutoSize = true;
             this.label14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(1616, 114);
+            this.label14.Location = new System.Drawing.Point(1380, 114);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(72, 17);
             this.label14.TabIndex = 1;
@@ -140,7 +132,7 @@ namespace WindowsFormsUI
             this.label13.AutoSize = true;
             this.label13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(1488, 114);
+            this.label13.Location = new System.Drawing.Point(1252, 114);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(72, 17);
             this.label13.TabIndex = 1;
@@ -151,7 +143,7 @@ namespace WindowsFormsUI
             this.label12.AutoSize = true;
             this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(1361, 114);
+            this.label12.Location = new System.Drawing.Point(1125, 114);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(90, 17);
             this.label12.TabIndex = 1;
@@ -162,29 +154,18 @@ namespace WindowsFormsUI
             this.label11.AutoSize = true;
             this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(1258, 114);
+            this.label11.Location = new System.Drawing.Point(1022, 114);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 17);
             this.label11.TabIndex = 1;
             this.label11.Text = "REHBER";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(1140, 114);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 17);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "BANKA";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(1006, 114);
+            this.label9.Location = new System.Drawing.Point(902, 114);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 17);
             this.label9.TabIndex = 1;
@@ -195,7 +176,7 @@ namespace WindowsFormsUI
             this.label8.AutoSize = true;
             this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(903, 114);
+            this.label8.Location = new System.Drawing.Point(799, 114);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 17);
             this.label8.TabIndex = 1;
@@ -206,7 +187,7 @@ namespace WindowsFormsUI
             this.label7.AutoSize = true;
             this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(772, 114);
+            this.label7.Location = new System.Drawing.Point(668, 114);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 17);
             this.label7.TabIndex = 1;
@@ -217,22 +198,11 @@ namespace WindowsFormsUI
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(621, 114);
+            this.label6.Location = new System.Drawing.Point(517, 114);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 17);
             this.label6.TabIndex = 1;
             this.label6.Text = "PERSONELLER";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(525, 114);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 17);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "FİRMALAR";
             // 
             // label4
             // 
@@ -290,7 +260,7 @@ namespace WindowsFormsUI
             this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(1610, 39);
+            this.btnExit.Location = new System.Drawing.Point(1374, 39);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(88, 72);
             this.btnExit.TabIndex = 0;
@@ -311,7 +281,7 @@ namespace WindowsFormsUI
             this.btnSetting.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnSetting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.Location = new System.Drawing.Point(1481, 39);
+            this.btnSetting.Location = new System.Drawing.Point(1245, 39);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Size = new System.Drawing.Size(88, 72);
             this.btnSetting.TabIndex = 0;
@@ -331,7 +301,7 @@ namespace WindowsFormsUI
             this.btnSafe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnSafe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnSafe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSafe.Location = new System.Drawing.Point(882, 39);
+            this.btnSafe.Location = new System.Drawing.Point(778, 39);
             this.btnSafe.Name = "btnSafe";
             this.btnSafe.Size = new System.Drawing.Size(88, 72);
             this.btnSafe.TabIndex = 0;
@@ -351,7 +321,7 @@ namespace WindowsFormsUI
             this.btnInvoice.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnInvoice.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInvoice.Location = new System.Drawing.Point(1357, 39);
+            this.btnInvoice.Location = new System.Drawing.Point(1121, 39);
             this.btnInvoice.Name = "btnInvoice";
             this.btnInvoice.Size = new System.Drawing.Size(88, 72);
             this.btnInvoice.TabIndex = 0;
@@ -372,7 +342,7 @@ namespace WindowsFormsUI
             this.btnNotes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnNotes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotes.Location = new System.Drawing.Point(993, 39);
+            this.btnNotes.Location = new System.Drawing.Point(889, 39);
             this.btnNotes.Name = "btnNotes";
             this.btnNotes.Size = new System.Drawing.Size(88, 72);
             this.btnNotes.TabIndex = 0;
@@ -392,7 +362,7 @@ namespace WindowsFormsUI
             this.btnDebt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnDebt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnDebt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDebt.Location = new System.Drawing.Point(762, 39);
+            this.btnDebt.Location = new System.Drawing.Point(658, 39);
             this.btnDebt.Name = "btnDebt";
             this.btnDebt.Size = new System.Drawing.Size(88, 72);
             this.btnDebt.TabIndex = 0;
@@ -413,7 +383,7 @@ namespace WindowsFormsUI
             this.btnGuide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnGuide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnGuide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuide.Location = new System.Drawing.Point(1245, 39);
+            this.btnGuide.Location = new System.Drawing.Point(1009, 39);
             this.btnGuide.Name = "btnGuide";
             this.btnGuide.Size = new System.Drawing.Size(88, 72);
             this.btnGuide.TabIndex = 0;
@@ -455,7 +425,7 @@ namespace WindowsFormsUI
             this.btnStaff.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnStaff.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStaff.Location = new System.Drawing.Point(634, 39);
+            this.btnStaff.Location = new System.Drawing.Point(530, 39);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(88, 72);
             this.btnStaff.TabIndex = 0;
@@ -463,27 +433,6 @@ namespace WindowsFormsUI
             this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             this.btnStaff.MouseLeave += new System.EventHandler(this.btnProduct_MouseLeave);
             this.btnStaff.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnProduct_MouseMove_1);
-            // 
-            // btnBank
-            // 
-            this.btnBank.BackColor = System.Drawing.Color.Transparent;
-            this.btnBank.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBank.BackgroundImage")));
-            this.btnBank.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnBank.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBank.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnBank.FlatAppearance.BorderSize = 0;
-            this.btnBank.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gray;
-            this.btnBank.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnBank.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnBank.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBank.Location = new System.Drawing.Point(1121, 39);
-            this.btnBank.Name = "btnBank";
-            this.btnBank.Size = new System.Drawing.Size(88, 72);
-            this.btnBank.TabIndex = 0;
-            this.btnBank.UseVisualStyleBackColor = false;
-            this.btnBank.Click += new System.EventHandler(this.btnBank_Click);
-            this.btnBank.MouseLeave += new System.EventHandler(this.btnProduct_MouseLeave);
-            this.btnBank.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnProduct_MouseMove_1);
             // 
             // btnStock
             // 
@@ -505,27 +454,6 @@ namespace WindowsFormsUI
             this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             this.btnStock.MouseLeave += new System.EventHandler(this.btnProduct_MouseLeave);
             this.btnStock.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnProduct_MouseMove_1);
-            // 
-            // btnCompany
-            // 
-            this.btnCompany.BackColor = System.Drawing.Color.Transparent;
-            this.btnCompany.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCompany.BackgroundImage")));
-            this.btnCompany.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnCompany.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCompany.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnCompany.FlatAppearance.BorderSize = 0;
-            this.btnCompany.FlatAppearance.CheckedBackColor = System.Drawing.Color.Gray;
-            this.btnCompany.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnCompany.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnCompany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompany.Location = new System.Drawing.Point(513, 39);
-            this.btnCompany.Name = "btnCompany";
-            this.btnCompany.Size = new System.Drawing.Size(88, 72);
-            this.btnCompany.TabIndex = 0;
-            this.btnCompany.UseVisualStyleBackColor = false;
-            this.btnCompany.Click += new System.EventHandler(this.btnCompany_Click);
-            this.btnCompany.MouseLeave += new System.EventHandler(this.btnProduct_MouseLeave);
-            this.btnCompany.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnProduct_MouseMove_1);
             // 
             // btnProduct
             // 
@@ -601,21 +529,17 @@ namespace WindowsFormsUI
         private System.Windows.Forms.Button btnGuide;
         private System.Windows.Forms.Button btnCustomer;
         private System.Windows.Forms.Button btnStaff;
-        private System.Windows.Forms.Button btnBank;
         private System.Windows.Forms.Button btnStock;
-        private System.Windows.Forms.Button btnCompany;
         private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

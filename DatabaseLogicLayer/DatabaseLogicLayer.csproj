@@ -42,10 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BanksDatabase.cs" />
     <Compile Include="BrandDatabase.cs" />
     <Compile Include="City.cs" />
-    <Compile Include="CompanyDatabase.cs" />
     <Compile Include="CustomerDatabase.cs" />
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="DebtDatabase.cs" />

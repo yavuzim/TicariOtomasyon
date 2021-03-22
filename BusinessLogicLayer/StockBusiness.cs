@@ -49,15 +49,13 @@ namespace BusinessLogicLayer
                 while (read.Read())
                 {
                     stock = new StockList();
-                    //  {
                     stock.UrunID = read.GetInt32(0);
                     stock.UrunAd = read.GetString(1).ToString();
                     stock.StokAdet = read.GetInt16(2);
                     stock.UrunMarkaId = read.GetString(3);
                     stock.UrunModel = read.GetString(4);
                     stock.UrunDetay = read.GetString(5);
-                  //  stock.//};
-                     stockList.Add(stock);
+                    stockList.Add(stock);
                 }
                 read.Close();
             }

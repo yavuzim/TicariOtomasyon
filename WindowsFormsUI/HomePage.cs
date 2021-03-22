@@ -46,12 +46,6 @@ namespace WindowsFormsUI
             frm.Show();
         }
 
-        private void btnCompany_Click(object sender, EventArgs e)
-        {
-            CompanyForms frm = new CompanyForms();
-            GetForm(frm);
-        }
-
         private void btnStaff_Click(object sender, EventArgs e)
         {
             PersonnelForms frm = new PersonnelForms();
@@ -67,12 +61,6 @@ namespace WindowsFormsUI
         private void btnDebt_Click(object sender, EventArgs e)
         {
             DebtForms frm = new DebtForms();
-            GetForm(frm);
-        }
-
-        private void btnBank_Click(object sender, EventArgs e)
-        {
-            BanksForms frm = new BanksForms();
             GetForm(frm);
         }
 

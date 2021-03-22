@@ -24,7 +24,7 @@ namespace DatabaseLogicLayer
         public SqlDataReader StockList()
         {
             // cmd = new SqlCommand("select Stoklar.StokID,UrunAd,UrunMarkaId,UrunModel,UrunDetay,StokAdet from Stoklar inner join Urunler on Stoklar.UrunId = Urunler.UrunID ", con);
-            cmd = new SqlCommand("select Urunler.UrunID,UrunAd,StokAdet,MarkaAd,UrunModel,UrunDetay from Urunler inner join urunmarka on urunler.urunMarkaId = urunmarka.MarkaID left join Stoklar on Stoklar.UrunId = Urunler.UrunID", con);
+            cmd = new SqlCommand("select Urunler.UrunID,UrunAd,StokAdet,MarkaAd,UrunModel,UrunDetay from Urunler inner join urunmarka on urunler.urunMarkaId = urunmarka.MarkaID left join Stoklar on Stoklar.UrunId = Urunler.UrunID where StokAdet!=''", con);
             ConnectionWizard();
             reader = cmd.ExecuteReader();
             return reader;
