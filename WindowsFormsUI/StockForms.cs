@@ -36,15 +36,18 @@ namespace WindowsFormsUI
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.DataSource = stockList;
             dataGridView1.Columns[0].Visible = false;
-            dataGridView1.Columns[2].Visible = false;
-            dataGridView1.Columns[4].Visible = false;
-            dataGridView1.Columns[1].Width = 253;
-            dataGridView1.Columns[3].Width = 100;
-            dataGridView1.Columns[5].Width = 100;
+            dataGridView1.Columns[5].Visible = false;
+            dataGridView1.Columns[5].Width = 200;
+            dataGridView1.Columns[1].HeaderText = "ÜRÜN";
+            dataGridView1.Columns[2].HeaderText = "ADET";
+            dataGridView1.Columns[2].HeaderText = "ADET";
+            dataGridView1.Columns[3].HeaderText = "MARKA";
+            dataGridView1.Columns[5].HeaderText = "MODEL";
             for (int i = 0; i < stockList.Count; i++)
             {
                 chart1.Series["Urun"].Points.Add(stockList[i].StokAdet);
-                chart1.Series["Urun"].Points[i].AxisLabel = stockList[i].UrunAd.ToString() + " - " + stockList[i].UrunModel.ToString();
+                chart1.Series["Urun"].Points[i].LegendText = stockList[i].UrunAd.ToString() + " - " + stockList[i].UrunMarkaId.ToString();
+                chart1.Series["Urun"].Points[i].AxisLabel = stockList[i].StokAdet.ToString()+" ADET";
             }
         }
 

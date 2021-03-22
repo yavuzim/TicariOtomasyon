@@ -48,16 +48,16 @@ namespace BusinessLogicLayer
                 read = sD.StockList();
                 while (read.Read())
                 {
-                    stock = new StockList()
-                    {
-                        StokID = read.GetInt32(0),
-                        UrunAd = read.GetString(1).ToString(),
-                        UrunMarkaId = read.GetInt32(2).ToString(),
-                        UrunModel = read.GetString(3).ToString(),
-                        UrunDetay = read.GetString(4).ToString(),
-                        StokAdet = read.GetInt16(5)
-                    };
-                    stockList.Add(stock);
+                    stock = new StockList();
+                    //  {
+                    stock.UrunID = read.GetInt32(0);
+                    stock.UrunAd = read.GetString(1).ToString();
+                    stock.StokAdet = read.GetInt16(2);
+                    stock.UrunMarkaId = read.GetString(3);
+                    stock.UrunModel = read.GetString(4);
+                    stock.UrunDetay = read.GetString(5);
+                  //  stock.//};
+                     stockList.Add(stock);
                 }
                 read.Close();
             }

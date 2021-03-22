@@ -31,7 +31,7 @@ namespace WindowsFormsUI
             gridStocks.Columns[1].HeaderText = "ÜRÜN AD";
             gridStocks.Columns[2].HeaderText = "ÜRÜN MARKA";
             gridStocks.Columns[3].HeaderText = "ÜRÜN MODEL";
-            gridStocks.Columns[3].Width = 180;
+            gridStocks.Columns[3].Width = 65;
         }
         private void StockAddUpdate_Load(object sender, EventArgs e)
         {
