@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasketDatabase.cs" />
     <Compile Include="BrandDatabase.cs" />
     <Compile Include="City.cs" />
     <Compile Include="CustomerDatabase.cs" />

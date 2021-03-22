@@ -351,3 +351,4 @@ C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\bin\Debug\ja\DevExpr
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\bin\Debug\ru\DevExpress.Xpo.v20.2.resources.dll
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.StockAddUpdate.resources
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.exe.licenses
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.BasketForms.resources
