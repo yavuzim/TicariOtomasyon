@@ -24,7 +24,7 @@ namespace WindowsFormsUI
         }
         void BasketList()
         {
-            string[] columns = { "SepetID", "Müşteri Adı", "Müşteri Soyad", "Ürün", "Ürün Marka", "Ürün Model", "Adet", "Tutar" };
+            string[] columns = { "SepetID", "Ürün", "Ürün Marka", "Ürün Model","Satış Fiyat", "Adet", "Tutar" };
             for (int i = 0; i < columns.Length; i++)
                 listView1.Columns.Add(columns[i], 100);
             BasketBusiness bB = new BasketBusiness();

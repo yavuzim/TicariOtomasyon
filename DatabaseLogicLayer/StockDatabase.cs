@@ -21,10 +21,22 @@ namespace DatabaseLogicLayer
             ConnectionWizard();
             return resulReturn;
         }
+        public int StockUpdate(StockList stock)
+        {
+            int resulReturn = 0;
+            cmd = new SqlCommand("StokGuncelle", con);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.Add("@StokID", System.Data.SqlDbType.Int).Value = stock.StockID;
+            cmd.Parameters.Add("@UrunId", System.Data.SqlDbType.Int).Value = stock.UrunAd;
+            cmd.Parameters.Add("@StokAdet", System.Data.SqlDbType.SmallInt).Value = stock.StokAdet;
+            ConnectionWizard();
+            resulReturn = cmd.ExecuteNonQuery();
+            ConnectionWizard();
+            return resulReturn;
+        }
         public SqlDataReader StockList()
         {
-            // cmd = new SqlCommand("select Stoklar.StokID,UrunAd,UrunMarkaId,UrunModel,UrunDetay,StokAdet from Stoklar inner join Urunler on Stoklar.UrunId = Urunler.UrunID ", con);
-            cmd = new SqlCommand("select Urunler.UrunID,UrunAd,StokAdet,MarkaAd,UrunModel,UrunDetay from Urunler inner join urunmarka on urunler.urunMarkaId = urunmarka.MarkaID left join Stoklar on Stoklar.UrunId = Urunler.UrunID where StokAdet!=''", con);
+            cmd = new SqlCommand("select Urunler.UrunID,Stoklar.StokID,UrunAd,MarkaAd,UrunModel,UrunDetay,StokAdet,SatisFiyat,Indirim,KDV from Urunler inner join urunmarka on urunler.urunMarkaId = urunmarka.MarkaID left join Stoklar on Stoklar.UrunId = Urunler.UrunID where StokAdet!=''", con);
             ConnectionWizard();
             reader = cmd.ExecuteReader();
             return reader;

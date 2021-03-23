@@ -29,25 +29,24 @@ namespace WindowsFormsUI
 
         private void StockForms_Load(object sender, EventArgs e)
         {
-            BrandBusiness bbusiness = new BrandBusiness();
-            List<Brand> brandList = bbusiness.BrandList();
             StockBusiness sB = new StockBusiness();
             List<StockList> stockList = sB.StockList();
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.DataSource = stockList;
             dataGridView1.Columns[0].Visible = false;
-            dataGridView1.Columns[5].Visible = false;
-            dataGridView1.Columns[5].Width = 200;
+            dataGridView1.Columns[4].Visible = false;
+            dataGridView1.Columns[6].Visible = false;
+            dataGridView1.Columns[7].Visible = false;
+            dataGridView1.Columns[8].Visible = false;
             dataGridView1.Columns[1].HeaderText = "ÜRÜN";
-            dataGridView1.Columns[2].HeaderText = "ADET";
-            dataGridView1.Columns[2].HeaderText = "ADET";
-            dataGridView1.Columns[3].HeaderText = "MARKA";
-            dataGridView1.Columns[5].HeaderText = "MODEL";
+            dataGridView1.Columns[5].HeaderText = "ADET";
+            dataGridView1.Columns[2].HeaderText = "MARKA";
+            dataGridView1.Columns[3].HeaderText = "MODEL";
             for (int i = 0; i < stockList.Count; i++)
             {
                 chart1.Series["Urun"].Points.Add(stockList[i].StokAdet);
                 chart1.Series["Urun"].Points[i].LegendText = stockList[i].UrunAd.ToString() + " - " + stockList[i].UrunMarkaId.ToString();
-                chart1.Series["Urun"].Points[i].AxisLabel = stockList[i].StokAdet.ToString()+" ADET";
+                chart1.Series["Urun"].Points[i].AxisLabel = stockList[i].StokAdet.ToString() + " ADET";
             }
         }
 

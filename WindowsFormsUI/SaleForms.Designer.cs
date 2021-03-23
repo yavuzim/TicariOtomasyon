@@ -32,6 +32,9 @@ namespace WindowsFormsUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SaleForms));
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txtNumber = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
             this.GetBasket = new System.Windows.Forms.Button();
             this.btnBasket = new System.Windows.Forms.Button();
@@ -47,6 +50,7 @@ namespace WindowsFormsUI
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -68,6 +72,7 @@ namespace WindowsFormsUI
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.groupBox5);
             this.groupBox3.Controls.Add(this.btnSales);
             this.groupBox3.Controls.Add(this.GetBasket);
             this.groupBox3.Controls.Add(this.btnBasket);
@@ -76,12 +81,47 @@ namespace WindowsFormsUI
             this.groupBox3.Controls.Add(this.groupBox1);
             this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox3.Location = new System.Drawing.Point(281, 59);
+            this.groupBox3.Location = new System.Drawing.Point(158, 56);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1346, 796);
+            this.groupBox3.Size = new System.Drawing.Size(1485, 796);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "ÜRÜNLER";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.txtNumber);
+            this.groupBox5.Controls.Add(this.button2);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox5.Location = new System.Drawing.Point(392, 38);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(361, 81);
+            this.groupBox5.TabIndex = 11;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Ürün Adedi Giriniz";
+            // 
+            // txtNumber
+            // 
+            this.txtNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtNumber.Location = new System.Drawing.Point(99, 31);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(115, 26);
+            this.txtNumber.TabIndex = 9;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = global::WindowsFormsUI.Properties.Resources.icons8_Add_32;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Location = new System.Drawing.Point(232, 25);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(47, 40);
+            this.button2.TabIndex = 10;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // btnSales
             // 
@@ -96,7 +136,7 @@ namespace WindowsFormsUI
             this.btnSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSales.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnSales.Location = new System.Drawing.Point(1026, 55);
+            this.btnSales.Location = new System.Drawing.Point(1267, 69);
             this.btnSales.Name = "btnSales";
             this.btnSales.Size = new System.Drawing.Size(185, 40);
             this.btnSales.TabIndex = 9;
@@ -116,7 +156,7 @@ namespace WindowsFormsUI
             this.GetBasket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GetBasket.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.GetBasket.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.GetBasket.Location = new System.Drawing.Point(798, 59);
+            this.GetBasket.Location = new System.Drawing.Point(1029, 69);
             this.GetBasket.Name = "GetBasket";
             this.GetBasket.Size = new System.Drawing.Size(185, 40);
             this.GetBasket.TabIndex = 9;
@@ -137,12 +177,13 @@ namespace WindowsFormsUI
             this.btnBasket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBasket.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBasket.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnBasket.Location = new System.Drawing.Point(572, 59);
+            this.btnBasket.Location = new System.Drawing.Point(801, 69);
             this.btnBasket.Name = "btnBasket";
             this.btnBasket.Size = new System.Drawing.Size(185, 40);
             this.btnBasket.TabIndex = 9;
             this.btnBasket.Text = "Sepete Ekle";
             this.btnBasket.UseVisualStyleBackColor = false;
+            this.btnBasket.Click += new System.EventHandler(this.btnBasket_Click);
             // 
             // groupBox4
             // 
@@ -151,7 +192,7 @@ namespace WindowsFormsUI
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.Location = new System.Drawing.Point(30, 38);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(495, 81);
+            this.groupBox4.Size = new System.Drawing.Size(338, 81);
             this.groupBox4.TabIndex = 8;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ürün Adı";
@@ -161,7 +202,7 @@ namespace WindowsFormsUI
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox1.Location = new System.Drawing.Point(37, 31);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(368, 26);
+            this.textBox1.Size = new System.Drawing.Size(239, 26);
             this.textBox1.TabIndex = 9;
             // 
             // button1
@@ -174,7 +215,7 @@ namespace WindowsFormsUI
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(411, 21);
+            this.button1.Location = new System.Drawing.Point(282, 21);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 40);
             this.button1.TabIndex = 10;
@@ -187,8 +228,9 @@ namespace WindowsFormsUI
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(933, 627);
+            this.dataGridView1.Size = new System.Drawing.Size(1060, 627);
             this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // groupBox1
             // 
@@ -270,6 +312,8 @@ namespace WindowsFormsUI
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -296,5 +340,8 @@ namespace WindowsFormsUI
         private System.Windows.Forms.Button btnSales;
         private System.Windows.Forms.Button btnBasket;
         private System.Windows.Forms.Button GetBasket;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox txtNumber;
+        private System.Windows.Forms.Button button2;
     }
 }

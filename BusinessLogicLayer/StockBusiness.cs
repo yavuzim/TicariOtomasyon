@@ -10,7 +10,7 @@ namespace BusinessLogicLayer
 {
     public class StockBusiness
     {
-        public int StockAdd(string UrunId, short StokAdet)
+        public int StockAdd(string UrunId, int StokAdet)
         {
             int resulReturn = 0;
             using (StockDatabase sD = new StockDatabase())
@@ -39,6 +39,27 @@ namespace BusinessLogicLayer
             }
             return resulReturn;
         }
+        public int StockUpdate(int id, int UrunId, int StokAdet)
+        {
+            int resulReturn = 0;
+            using (StockDatabase sD = new StockDatabase())
+            {
+                if (UrunId == null) resulReturn = 0;
+                else if (StokAdet < 0) resulReturn = 1;
+                else
+                {
+                    StockList stock = new StockList()
+                    {
+                        StockID = id,
+                        UrunAd = UrunId.ToString(),
+                        StokAdet = StokAdet
+                    };
+                    resulReturn = sD.StockUpdate(stock);
+                    resulReturn = 2;
+                }
+            }
+            return resulReturn;
+        }
         public List<StockList> StockList()
         {
             List<StockList> stockList = new List<StockList>();
@@ -50,11 +71,15 @@ namespace BusinessLogicLayer
                 {
                     stock = new StockList();
                     stock.UrunID = read.GetInt32(0);
-                    stock.UrunAd = read.GetString(1).ToString();
-                    stock.StokAdet = read.GetInt16(2);
+                    stock.StockID = read.GetInt32(1);
+                    stock.UrunAd = read.GetString(2).ToString();
                     stock.UrunMarkaId = read.GetString(3);
                     stock.UrunModel = read.GetString(4);
                     stock.UrunDetay = read.GetString(5);
+                    stock.StokAdet = read.GetInt16(6);
+                    stock.SatisFiyat = read.GetDecimal(7);
+                    stock.Indirim = read.GetInt32(8);
+                    stock.KDV = read.GetDecimal(9);
                     stockList.Add(stock);
                 }
                 read.Close();
