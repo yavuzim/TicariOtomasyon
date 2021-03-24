@@ -33,7 +33,13 @@ namespace DatabaseLogicLayer
             ConnectionWizard();
             return resultReturn;
         }
-
+        public SqlDataReader BasketListKontrol()
+        {
+            cmd = new SqlCommand("select UrunAd from Sepet", con);
+            ConnectionWizard();
+            reader = cmd.ExecuteReader();
+            return reader;
+        }
         public SqlDataReader BasketList()
         {
             cmd = new SqlCommand("select SepetID,UrunAd,MarkaAd,UrunModel,SatisFiyat,Adet,Tutar from Sepet inner join Urunler on Sepet.Urun = Urunler.UrunID left join UrunMarka on Urunler.UrunMarkaId = UrunMarka.MarkaID", con);

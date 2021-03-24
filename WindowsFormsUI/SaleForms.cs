@@ -60,7 +60,7 @@ namespace WindowsFormsUI
             BasketForms frm = new BasketForms();
             frm.ShowDialog();
         }
-        int secilen;
+        int secilen = -1;
         string id, adet, satisFiyat, stockId;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -75,26 +75,30 @@ namespace WindowsFormsUI
         {
             string message = "";
             BasketBusiness bBusiness = new BasketBusiness();
-            if (int.Parse(txtNumber.Text) > int.Parse(adet) || int.Parse(txtNumber.Text) < 0) message = "Girilen adet stokta yok";
-            else
+            if (secilen > -1)
             {
-                if (txtNumber.Text == "") message = "Lütfen Adet Giriniz";
+                if (int.Parse(txtNumber.Text) > int.Parse(adet) || int.Parse(txtNumber.Text) < 0) message = "Girilen adet stokta yok";
                 else
                 {
-                    decimal Tutar = decimal.Parse(satisFiyat) * short.Parse(txtNumber.Text);
-                    int getBsaket = bBusiness.BasketAdd(int.Parse(id), short.Parse(txtNumber.Text), Tutar);
-                    if (getBsaket == 1) { }
+                    if (txtNumber.Text == "") message = "Lütfen Adet Giriniz";
                     else
                     {
-                        message = "Ürün Sepete Eklendi";
-                        int stock;
-                        stock = int.Parse(adet) - int.Parse(txtNumber.Text);
-                        StockBusiness sBusiness = new StockBusiness();
-                        int getStock = sBusiness.StockUpdate(int.Parse(stockId), int.Parse(id), stock);
+                        decimal Tutar = decimal.Parse(satisFiyat) * short.Parse(txtNumber.Text);
+                        int getBsaket = bBusiness.BasketAdd(int.Parse(id), short.Parse(txtNumber.Text), Tutar);
+                        if (getBsaket == 1)
+                        {
+                            message = "Ürün Sepete Eklendi";
+                            int stock;
+                            stock = int.Parse(adet) - int.Parse(txtNumber.Text);
+                            StockBusiness sBusiness = new StockBusiness();
+                            int getStock = sBusiness.StockUpdate(int.Parse(stockId), int.Parse(id), stock);
+                        }
                     }
                 }
             }
+            else message = "Lütfen Ürün Seçiniz";
             MessageBox.Show(message, "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information); ProductList();
+            secilen = -1;
         }
     }
 }
