@@ -77,10 +77,11 @@ namespace WindowsFormsUI
             BasketBusiness bBusiness = new BasketBusiness();
             if (secilen > -1)
             {
-                if (int.Parse(txtNumber.Text) > int.Parse(adet) || int.Parse(txtNumber.Text) < 0) message = "Girilen adet stokta yok";
+                if (txtNumber.Text == "") message = "Lütfen Adet Giriniz";
                 else
                 {
-                    if (txtNumber.Text == "") message = "Lütfen Adet Giriniz";
+                    if (int.Parse(txtNumber.Text) > int.Parse(adet) || int.Parse(txtNumber.Text) < 0) message = "Girilen adet stokta yok";
+
                     else
                     {
                         decimal Tutar = decimal.Parse(satisFiyat) * short.Parse(txtNumber.Text);

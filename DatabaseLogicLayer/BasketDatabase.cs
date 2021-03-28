@@ -10,7 +10,7 @@ namespace DatabaseLogicLayer
 {
     public class BasketDatabase : DatabaseConnection
     {
-        public int BasketAdd(int Urun,short Adet,decimal Tutar)
+        public int BasketAdd(int Urun,int Adet,decimal Tutar)
         {
             int resultReturn;
             cmd = new SqlCommand("insert into Sepet (Urun,Adet,Tutar) values (@Urun,@Adet,@Tutar)", con);
@@ -22,12 +22,13 @@ namespace DatabaseLogicLayer
             ConnectionWizard();
             return resultReturn;
         }
-        public int BasketUpdate(int id,int adet)
+        public int BasketUpdate(int id,int adet,decimal Tutar)
         {
             int resultReturn;
-            cmd = new SqlCommand("Update Sepet set Adet=@Adet where SepetID=@id", con);
+            cmd = new SqlCommand("Update Sepet set Adet=@Adet+Adet, Tutar=@Tutar+Tutar where SepetID=@id", con);
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
             cmd.Parameters.Add("@Adet", SqlDbType.Int).Value = adet;
+            cmd.Parameters.Add("@Tutar", SqlDbType.Decimal).Value = Tutar;
             ConnectionWizard();
             resultReturn = cmd.ExecuteNonQuery();
             ConnectionWizard();
@@ -35,7 +36,7 @@ namespace DatabaseLogicLayer
         }
         public SqlDataReader BasketListKontrol()
         {
-            cmd = new SqlCommand("select UrunAd from Sepet", con);
+            cmd = new SqlCommand("select UrunID,SatisFiyat from Sepet inner join Urunler on Sepet.Urun = Urunler.UrunID", con);
             ConnectionWizard();
             reader = cmd.ExecuteReader();
             return reader;

@@ -11,28 +11,53 @@ namespace BusinessLogicLayer
 {
     public class BasketBusiness
     {
-        public int BasketAdd(int Urun, short Adet, decimal Tutar)
+        public int BasketAdd(int Urun, int Adet, decimal Tutar)
         {
             int resultReturn = 0;
+            bool kontrol = false;
+            decimal satisFiyat = 0;
             using (BasketDatabase bD = new BasketDatabase())
             {
+                for (int i = 0; i < BasketListKontrol().Count; i++)
+                {
+                    if (Urun == BasketListKontrol()[i])
+                    {
+                        //satisFiyat = Tutar / Adet;
+                        kontrol = true;
+                        break;
+                    }
+                }
+                if (kontrol)
+                    resultReturn = bD.BasketUpdate(Urun, Adet, Tutar);
+                else
                     resultReturn = bD.BasketAdd(Urun, Adet, Tutar);
             }
             return resultReturn;
         }
+        //public int BasketUpdate(int id, int adet)
+        //{
+        //    int resultReturn = 0;
+        //    using (BasketDatabase bD = new BasketDatabase())
+        //    {
+        //        resultReturn = bD.BasketUpdate(id, adet);
+        //    }
+        //    return resultReturn;
+        //}
+        List<decimal> satisList = new List<decimal>();
         public List<int> BasketListKontrol()
         {
             SqlDataReader read = null;
-            List<int> basketControl = new List<int>();
+            List<int> basketKontrol = new List<int>();
             using (BasketDatabase bD = new BasketDatabase())
             {
-                read = bD.BasketList();
+                read = bD.BasketListKontrol();
                 while (read.Read())
                 {
-                    basketControl.Add(Convert.ToInt32(read["UrunAd"]));
+                    basketKontrol.Add(Convert.ToInt32(read["UrunID"]));
+                    satisList.Add(Convert.ToDecimal(read["SatisFiyat"]));
                 }
             }
-            return basketControl;
+            return basketKontrol;
         }
         public void BasketList(ListView listView)
         {

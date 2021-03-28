@@ -26,7 +26,7 @@ namespace WindowsFormsUI
         {
             this.Hide();
         }
-        void GridColor()
+        void GridColor(DataGridView dg)
         {          
             for (int i = 0; i < gridProducts.Rows.Count; i++)
             {
@@ -37,7 +37,7 @@ namespace WindowsFormsUI
                     color.BackColor = Color.Red;
                     color.ForeColor = Color.White;
                 }
-                gridProducts.Rows[i].DefaultCellStyle = color;
+                dg.Rows[i].DefaultCellStyle = color;
             }
         }
         public void ProductList()
@@ -62,8 +62,9 @@ namespace WindowsFormsUI
 
         }
         private void ProductForms_Load(object sender, EventArgs e)
-        {
-            ProductList(); GridColor();
+        {           
+            ProductList(); 
+            GridColor(gridProducts);
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -91,7 +92,8 @@ namespace WindowsFormsUI
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            ProductList(); GridColor();
+            ProductList();
+            GridColor(gridProducts);
         }
     }
 }
