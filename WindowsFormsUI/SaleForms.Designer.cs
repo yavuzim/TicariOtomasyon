@@ -34,7 +34,6 @@ namespace WindowsFormsUI
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.txtNumber = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
             this.GetBasket = new System.Windows.Forms.Button();
             this.btnBasket = new System.Windows.Forms.Button();
@@ -91,7 +90,6 @@ namespace WindowsFormsUI
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.txtNumber);
-            this.groupBox5.Controls.Add(this.button2);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox5.Location = new System.Drawing.Point(392, 38);
             this.groupBox5.Name = "groupBox5";
@@ -103,25 +101,10 @@ namespace WindowsFormsUI
             // txtNumber
             // 
             this.txtNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtNumber.Location = new System.Drawing.Point(99, 31);
+            this.txtNumber.Location = new System.Drawing.Point(16, 31);
             this.txtNumber.Name = "txtNumber";
-            this.txtNumber.Size = new System.Drawing.Size(115, 26);
+            this.txtNumber.Size = new System.Drawing.Size(330, 26);
             this.txtNumber.TabIndex = 9;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::WindowsFormsUI.Properties.Resources.icons8_Add_32;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(232, 25);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(47, 40);
-            this.button2.TabIndex = 10;
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // btnSales
             // 
@@ -342,6 +325,5 @@ namespace WindowsFormsUI
         private System.Windows.Forms.Button GetBasket;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox txtNumber;
-        private System.Windows.Forms.Button button2;
     }
 }

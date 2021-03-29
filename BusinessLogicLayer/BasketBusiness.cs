@@ -15,14 +15,12 @@ namespace BusinessLogicLayer
         {
             int resultReturn = 0;
             bool kontrol = false;
-            decimal satisFiyat = 0;
             using (BasketDatabase bD = new BasketDatabase())
             {
                 for (int i = 0; i < BasketListKontrol().Count; i++)
                 {
                     if (Urun == BasketListKontrol()[i])
                     {
-                        //satisFiyat = Tutar / Adet;
                         kontrol = true;
                         break;
                     }
@@ -31,19 +29,34 @@ namespace BusinessLogicLayer
                     resultReturn = bD.BasketUpdate(Urun, Adet, Tutar);
                 else
                     resultReturn = bD.BasketAdd(Urun, Adet, Tutar);
+                resultReturn = 1;
             }
             return resultReturn;
         }
-        //public int BasketUpdate(int id, int adet)
-        //{
-        //    int resultReturn = 0;
-        //    using (BasketDatabase bD = new BasketDatabase())
-        //    {
-        //        resultReturn = bD.BasketUpdate(id, adet);
-        //    }
-        //    return resultReturn;
-        //}
-        List<decimal> satisList = new List<decimal>();
+        List<int> sepetid = new List<int>();
+        public int BasketDelete(List<int> indis)
+        {
+            int resulReturn = 0, sayac = 0;
+            using (BasketDatabase bD = new BasketDatabase())
+            {
+                BasketListKontrol();
+                for (int i = 0; i < sepetid.Count; i++)
+                {
+                    if (i == indis[sayac])
+                    {
+                        int id = sepetid[i];
+                        resulReturn = bD.BasketDelete(id);
+                        sayac++;
+                        if(sayac==indis.Count)
+                        {
+                            resulReturn = 1;
+                            break;
+                        }    
+                    }
+                }
+            }
+            return resulReturn;
+        }
         public List<int> BasketListKontrol()
         {
             SqlDataReader read = null;
@@ -54,7 +67,7 @@ namespace BusinessLogicLayer
                 while (read.Read())
                 {
                     basketKontrol.Add(Convert.ToInt32(read["UrunID"]));
-                    satisList.Add(Convert.ToDecimal(read["SatisFiyat"]));
+                    sepetid.Add(Convert.ToInt32(read["SepetID"]));
                 }
             }
             return basketKontrol;
