@@ -90,6 +90,12 @@
     <Compile Include="HomePage.Designer.cs">
       <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="InvoiceAddForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceAddForms.Designer.cs">
+      <DependentUpon>InvoiceAddForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="InvoiceForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceAddForms.resx">
+      <DependentUpon>InvoiceAddForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InvoiceForms.resx">
       <DependentUpon>InvoiceForms.cs</DependentUpon>

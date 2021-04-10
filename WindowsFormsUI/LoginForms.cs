@@ -39,5 +39,15 @@ namespace WindowsFormsUI
             else if (returnResult < 0) MessageBox.Show("Kullanıcı Adı veya Şifre yanlış");
             else MessageBox.Show("Boş geçilmez.");
         }
+
+        private void txtUsername_Click(object sender, EventArgs e)
+        {
+            txtUsername.Text = "";
+        }
+
+        private void txtPassword_Click(object sender, EventArgs e)
+        {
+            txtPassword.Text = "";
+        }
     }
 }

@@ -33,7 +33,9 @@ namespace BusinessLogicLayer
             }
             return resultReturn;
         }
-        List<int> sepetid = new List<int>();
+        public List<int> sepetid = new List<int>();
+        public List<decimal> tutar = new List<decimal>();
+        public List<int> basketKontrol = new List<int>();
         public int BasketDelete(List<int> indis)
         {
             int resulReturn = 0, sayac = 0;
@@ -47,11 +49,11 @@ namespace BusinessLogicLayer
                         int id = sepetid[i];
                         resulReturn = bD.BasketDelete(id);
                         sayac++;
-                        if(sayac==indis.Count)
+                        if (sayac == indis.Count)
                         {
                             resulReturn = 1;
                             break;
-                        }    
+                        }
                     }
                 }
             }
@@ -59,8 +61,10 @@ namespace BusinessLogicLayer
         }
         public List<int> BasketListKontrol()
         {
+            tutar.Clear();
+            sepetid.Clear();
+            basketKontrol.Clear();
             SqlDataReader read = null;
-            List<int> basketKontrol = new List<int>();
             using (BasketDatabase bD = new BasketDatabase())
             {
                 read = bD.BasketListKontrol();
@@ -68,6 +72,7 @@ namespace BusinessLogicLayer
                 {
                     basketKontrol.Add(Convert.ToInt32(read["UrunID"]));
                     sepetid.Add(Convert.ToInt32(read["SepetID"]));
+                    tutar.Add(Convert.ToInt32(read["Tutar"]));
                 }
             }
             return basketKontrol;

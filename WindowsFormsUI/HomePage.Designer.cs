@@ -63,7 +63,7 @@ namespace WindowsFormsUI
             // 
             // FullPanel
             // 
-            this.FullPanel.BackColor = System.Drawing.Color.White;
+            this.FullPanel.BackColor = System.Drawing.Color.Gray;
             this.FullPanel.Controls.Add(this.downPanel);
             this.FullPanel.Controls.Add(this.TopPanel);
             this.FullPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -77,9 +77,9 @@ namespace WindowsFormsUI
             this.downPanel.BackColor = System.Drawing.Color.White;
             this.downPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.downPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.downPanel.Location = new System.Drawing.Point(0, 168);
+            this.downPanel.Location = new System.Drawing.Point(0, 157);
             this.downPanel.Name = "downPanel";
-            this.downPanel.Size = new System.Drawing.Size(1924, 887);
+            this.downPanel.Size = new System.Drawing.Size(1924, 898);
             this.downPanel.TabIndex = 1;
             // 
             // TopPanel
@@ -501,9 +501,10 @@ namespace WindowsFormsUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.FullPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

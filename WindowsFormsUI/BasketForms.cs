@@ -43,12 +43,20 @@ namespace WindowsFormsUI
             int secilenSayi = listView1.CheckedItems.Count;
             List<int> indis = new List<int>();
             foreach (ListViewItem seciliKayitBilgisi in listView1.CheckedItems)
-            {
                 indis.Add(seciliKayitBilgisi.Index);
-            }
             int deger = new BasketBusiness().BasketDelete(indis);
             if (deger == 1) MessageBox.Show("Silme İşlemi Başarılı!", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             BasketList();
+        }
+
+        private void btnSales_Click(object sender, EventArgs e)
+        {
+            int secilenSayi = listView1.CheckedItems.Count;
+            List<int> indis = new List<int>();
+            foreach (ListViewItem seciliKayitBilgisi in listView1.CheckedItems)
+                indis.Add(seciliKayitBilgisi.Index);
+            InvoiceAddForms frm = new InvoiceAddForms(indis);
+            frm.ShowDialog();
         }
     }
 }

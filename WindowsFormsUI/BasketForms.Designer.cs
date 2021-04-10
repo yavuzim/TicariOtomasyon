@@ -95,6 +95,7 @@ namespace WindowsFormsUI
             this.btnSales.TabIndex = 21;
             this.btnSales.Text = "Satış";
             this.btnSales.UseVisualStyleBackColor = false;
+            this.btnSales.Click += new System.EventHandler(this.btnSales_Click);
             // 
             // listView1
             // 

@@ -16,9 +16,7 @@ namespace BusinessLogicLayer
         {
             SqlDataReader read = null;
             using (TcKontrolDatabase tcD = new TcKontrolDatabase())
-            {
-                if (CustomerBusiness.customerTC == 1)
-                    read = tcD.TcList();
+            { 
                 if (PersonnelBusiness.personnelTC == 1)
                     read = tcD.TcListPersonnel();
                 while (read.Read())

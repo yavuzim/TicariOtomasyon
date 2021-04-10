@@ -352,3 +352,4 @@ C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\bin\Debug\ru\DevExpr
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.StockAddUpdate.resources
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.exe.licenses
 C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.BasketForms.resources
+C:\Users\YAVUZ İMER\Desktop\TicariOtomasyon\WindowsFormsUI\obj\Debug\WindowsFormsUI.InvoiceAddForms.resources

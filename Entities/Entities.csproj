@@ -46,6 +46,7 @@
     <Compile Include="Customer.cs" />
     <Compile Include="CustomerPersonnelBaseType.cs" />
     <Compile Include="Debt.cs" />
+    <Compile Include="Invoice.cs" />
     <Compile Include="Personnel.cs" />
     <Compile Include="ProductBrand.cs" />
     <Compile Include="Products.cs" />

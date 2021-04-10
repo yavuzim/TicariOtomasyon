@@ -29,6 +29,8 @@ namespace WindowsFormsUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForms));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblPasswordUpdate = new System.Windows.Forms.Label();
@@ -41,6 +43,7 @@ namespace WindowsFormsUI
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -128,6 +131,7 @@ namespace WindowsFormsUI
             // 
             // txtPassword
             // 
+            this.txtPassword.BackColor = System.Drawing.Color.White;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtPassword.Location = new System.Drawing.Point(123, 216);
@@ -135,10 +139,13 @@ namespace WindowsFormsUI
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(255, 23);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.Text = "Şifre..";
+            this.toolTip1.SetToolTip(this.txtPassword, "Şifre");
+            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::WindowsFormsUI.Properties.Resources.icons8_password_32;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(72, 207);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
@@ -148,12 +155,16 @@ namespace WindowsFormsUI
             // 
             // txtUsername
             // 
+            this.txtUsername.BackColor = System.Drawing.Color.White;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtUsername.Location = new System.Drawing.Point(123, 161);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(255, 23);
             this.txtUsername.TabIndex = 0;
+            this.txtUsername.Text = "Kullanıcı Adı...";
+            this.toolTip1.SetToolTip(this.txtUsername, "Kullanıcı Adı");
+            this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
             // 
             // panel3
             // 
@@ -166,7 +177,7 @@ namespace WindowsFormsUI
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WindowsFormsUI.Properties.Resources.icons8_user_32;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(72, 152);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
@@ -215,5 +226,6 @@ namespace WindowsFormsUI
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

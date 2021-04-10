@@ -46,7 +46,7 @@ namespace DatabaseLogicLayer
         }
         public SqlDataReader BasketListKontrol()
         {
-            cmd = new SqlCommand("select SepetID,UrunID,SatisFiyat from Sepet inner join Urunler on Sepet.Urun = Urunler.UrunID", con);
+            cmd = new SqlCommand("select SepetID,UrunID,SatisFiyat,Tutar from Sepet inner join Urunler on Sepet.Urun = Urunler.UrunID", con);
             ConnectionWizard();
             reader = cmd.ExecuteReader();
             return reader;

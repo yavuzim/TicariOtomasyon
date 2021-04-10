@@ -44,8 +44,8 @@
   <ItemGroup>
     <Compile Include="BasketBusiness.cs" />
     <Compile Include="BrandBusiness.cs" />
-    <Compile Include="CustomerBusiness.cs" />
     <Compile Include="DebtBusiness.cs" />
+    <Compile Include="InvoiceBusiness.cs" />
     <Compile Include="PersonnelBusiness.cs" />
     <Compile Include="ProductBrandBusiness.cs" />
     <Compile Include="ProductBusiness.cs" />
